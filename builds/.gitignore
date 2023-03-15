@@ -5,3 +5,7 @@
 *.aps
 *.log
 !build
+
+### Xcode ###
+Xcode/sodium/Headers/*
+xcuserdata/
