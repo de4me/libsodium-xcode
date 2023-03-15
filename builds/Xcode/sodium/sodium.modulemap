@@ -1,0 +1,10 @@
+
+framework module sodium [system] [extern_c] {
+
+  umbrella header "sodium.h"
+
+  export *
+  module * { export * }
+
+}
+

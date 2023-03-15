@@ -1,0 +1,72 @@
+#  headers_input.xcfilelist
+#  sodium
+#
+#  Created by DE4ME on 13.03.2023.
+#  
+
+# This file may be set as an input or output file list for a shell script build phase.
+# List file paths below; one per line. These paths will be considered inputs or outputs for the script phase.
+# Build settings will be expanded, e.g. $(SRCROOT)/fileName
+
+$(SRCROOT)/../../../src/libsodium/include/sodium.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/core.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_aes256gcm.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_auth_hmacsha256.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_auth_hmacsha512.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_auth_hmacsha512256.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_auth.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_box_curve25519xchacha20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_box_curve25519xsalsa20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_box.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_ed25519.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_hchacha20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_hsalsa20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_ristretto255.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_salsa20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_salsa208.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_salsa2012.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_generichash_blake2b.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_generichash.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash_sha256.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash_sha512.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_blake2b.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kx.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_onetimeauth.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_pwhash_argon2i.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_pwhash_argon2id.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_pwhash_scryptsalsa208sha256.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_pwhash.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_scalarmult_curve25519.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_scalarmult_ed25519.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_scalarmult_ristretto255.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_scalarmult.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_secretbox_xchacha20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_secretbox_xsalsa20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_secretbox.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_secretstream_xchacha20poly1305.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_shorthash_siphash24.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_shorthash.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_sign_ed25519.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_sign.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_chacha20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_salsa20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_salsa208.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_salsa2012.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_xchacha20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_xsalsa20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_verify_16.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_verify_32.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_verify_64.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/export.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/randombytes_internal_random.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/randombytes_sysrandom.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/randombytes.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/runtime.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/utils.h
+$(SRCROOT)/sodium/version.h
