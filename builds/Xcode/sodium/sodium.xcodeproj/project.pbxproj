@@ -6,6 +6,21 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BDE9A87429FCCFF300753C5E /* ALL */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BDE9A87729FCCFF300753C5E /* Build configuration list for PBXAggregateTarget "ALL" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BDE9A87B29FCD01000753C5E /* PBXTargetDependency */,
+				BDE9A87929FCD00900753C5E /* PBXTargetDependency */,
+			);
+			name = ALL;
+			productName = ALL;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BD3AB54529BF4A95001E6C8C /* blake2b-load-sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3AB3D729BF4A94001E6C8C /* blake2b-load-sse2.h */; };
 		BD3AB54829BF4A95001E6C8C /* blake2b-load-avx2.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3AB3DA29BF4A94001E6C8C /* blake2b-load-avx2.h */; };
@@ -632,6 +647,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = BD98D38F29C07ECA00DC1881;
 			remoteInfo = libssse3;
+		};
+		BDE9A87829FCD00900753C5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD3AB3BF29BF4A6B001E6C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3AB3C729BF4A6B001E6C8C;
+			remoteInfo = sodium;
+		};
+		BDE9A87A29FCD01000753C5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD3AB3BF29BF4A6B001E6C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3AB78F29BF7B28001E6C8C;
+			remoteInfo = libsodium;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2657,6 +2686,9 @@
 					BD98D38F29C07ECA00DC1881 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					BDE9A87429FCCFF300753C5E = {
+						CreatedOnToolsVersion = 14.3;
+					};
 				};
 			};
 			buildConfigurationList = BD3AB3C229BF4A6B001E6C8C /* Build configuration list for PBXProject "sodium" */;
@@ -2672,6 +2704,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BDE9A87429FCCFF300753C5E /* ALL */,
 				BD3AB3C729BF4A6B001E6C8C /* sodium */,
 				BD3AB78F29BF7B28001E6C8C /* libsodium */,
 				BD98D34C29C06B1D00DC1881 /* libaesni */,
@@ -3055,6 +3088,16 @@
 			isa = PBXTargetDependency;
 			target = BD98D38F29C07ECA00DC1881 /* libssse3 */;
 			targetProxy = BD98D41529C08C1E00DC1881 /* PBXContainerItemProxy */;
+		};
+		BDE9A87929FCD00900753C5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3AB3C729BF4A6B001E6C8C /* sodium */;
+			targetProxy = BDE9A87829FCD00900753C5E /* PBXContainerItemProxy */;
+		};
+		BDE9A87B29FCD01000753C5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3AB78F29BF7B28001E6C8C /* libsodium */;
+			targetProxy = BDE9A87A29FCD01000753C5E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3546,6 +3589,22 @@
 			};
 			name = Release;
 		};
+		BDE9A87529FCCFF300753C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDE9A87629FCCFF300753C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3635,6 +3694,15 @@
 			buildConfigurations = (
 				BD98D39229C07ECA00DC1881 /* Debug */,
 				BD98D39329C07ECA00DC1881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE9A87729FCCFF300753C5E /* Build configuration list for PBXAggregateTarget "ALL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE9A87529FCCFF300753C5E /* Debug */,
+				BDE9A87629FCCFF300753C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
