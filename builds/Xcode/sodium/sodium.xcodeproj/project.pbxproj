@@ -300,6 +300,10 @@
 		BD3AB97729BFB6D4001E6C8C /* poly1305_donna32.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3AB4A929BF4A95001E6C8C /* poly1305_donna32.h */; };
 		BD3AB98129BFB6D4001E6C8C /* shorthash_siphash_ref.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3AB48029BF4A95001E6C8C /* shorthash_siphash_ref.h */; };
 		BD3AB98D29BFB6D4001E6C8C /* blamka-round-ssse3.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3AB44F29BF4A95001E6C8C /* blamka-round-ssse3.h */; };
+		BD7DB9162A6FD950002804E3 /* asm_cet.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7DB9152A6FD950002804E3 /* asm_cet.h */; };
+		BD7DB9172A6FD950002804E3 /* asm_cet.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7DB9152A6FD950002804E3 /* asm_cet.h */; };
+		BD7DB9192A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7DB9182A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h */; };
+		BD7DB91A2A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7DB9182A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h */; };
 		BD98D35229C06CDD00DC1881 /* aead_aes256gcm_aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = BD3AB51D29BF4A95001E6C8C /* aead_aes256gcm_aesni.c */; };
 		BD98D35429C0769200DC1881 /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D34D29C06B1D00DC1881 /* libaesni.a */; };
 		BD98D35D29C076FD00DC1881 /* blake2b-compress-avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = BD3AB3D929BF4A94001E6C8C /* blake2b-compress-avx2.c */; };
@@ -963,6 +967,8 @@
 		BD3AB74429BF6E5B001E6C8C /* crypto_core_salsa2012.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_core_salsa2012.h; sourceTree = "<group>"; };
 		BD3AB79029BF7B28001E6C8C /* libsodium.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsodium.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3AB85F29BF9FA6001E6C8C /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = sodium/version.h; sourceTree = "<group>"; };
+		BD7DB9152A6FD950002804E3 /* asm_cet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_cet.h; sourceTree = "<group>"; };
+		BD7DB9182A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
 		BD98D34D29C06B1D00DC1881 /* libaesni.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaesni.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD98D35929C076B300DC1881 /* libavx2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libavx2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD98D36629C0789200DC1881 /* libavx512f.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libavx512f.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1982,6 +1988,7 @@
 				BD3AB66029BF4AB6001E6C8C /* crypto_shorthash_siphash24.h */,
 				BD3AB69029BF4AB6001E6C8C /* crypto_shorthash.h */,
 				BD3AB69529BF4AB6001E6C8C /* crypto_sign_ed25519.h */,
+				BD7DB9182A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h */,
 				BD3AB66C29BF4AB6001E6C8C /* crypto_sign.h */,
 				BD3AB68B29BF4AB6001E6C8C /* crypto_stream_chacha20.h */,
 				BD3AB66729BF4AB6001E6C8C /* crypto_stream_salsa20.h */,
@@ -2083,6 +2090,7 @@
 		BD98D4E329C0A2EB00DC1881 /* private */ = {
 			isa = PBXGroup;
 			children = (
+				BD7DB9152A6FD950002804E3 /* asm_cet.h */,
 				BD98D4E429C0A2EB00DC1881 /* ed25519_ref10.h */,
 				BD98D4E729C0A2EB00DC1881 /* ed25519_ref10_fe_25_5.h */,
 				BD98D4E829C0A2EB00DC1881 /* ed25519_ref10_fe_51.h */,
@@ -2193,6 +2201,7 @@
 				BD3AB6B729BF4AB6001E6C8C /* crypto_scalarmult_ristretto255.h in Headers */,
 				BD3AB77929BF6E5B001E6C8C /* core.h in Headers */,
 				BD3AB6E229BF4AB6001E6C8C /* crypto_sign_ed25519.h in Headers */,
+				BD7DB9162A6FD950002804E3 /* asm_cet.h in Headers */,
 				BD3AB77F29BF6E5B001E6C8C /* randombytes.h in Headers */,
 				BD3AB54A29BF4A95001E6C8C /* blake2.h in Headers */,
 				BD3AB75D29BF6E5B001E6C8C /* crypto_stream_salsa2012.h in Headers */,
@@ -2278,6 +2287,7 @@
 				BD3AB74E29BF6E5B001E6C8C /* crypto_core_salsa20.h in Headers */,
 				BD3AB75A29BF6E5B001E6C8C /* crypto_verify_32.h in Headers */,
 				BD3AB60E29BF4A95001E6C8C /* chacha20_dolbeau-avx2.h in Headers */,
+				BD7DB9192A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h in Headers */,
 				BD3AB54D29BF4A95001E6C8C /* blake2b-load-sse41.h in Headers */,
 				BD3AB55029BF4A95001E6C8C /* blake2b-compress-sse41.h in Headers */,
 				BD3AB6C129BF4AB6001E6C8C /* crypto_core_salsa208.h in Headers */,
@@ -2332,6 +2342,7 @@
 				BD3AB79729BF7C14001E6C8C /* crypto_scalarmult_ristretto255.h in Headers */,
 				BD3AB7B329BF7C14001E6C8C /* crypto_pwhash_argon2id.h in Headers */,
 				BD3AB79E29BF7C14001E6C8C /* crypto_scalarmult_curve25519.h in Headers */,
+				BD7DB91A2A6FD9F4002804E3 /* crypto_sign_edwards25519sha512batch.h in Headers */,
 				BD3AB7BE29BF7C14001E6C8C /* crypto_secretbox.h in Headers */,
 				BD3AB7A729BF7C14001E6C8C /* crypto_stream_chacha20.h in Headers */,
 				BD3AB7A929BF7C14001E6C8C /* randombytes.h in Headers */,
@@ -2378,6 +2389,7 @@
 				BD98D4FB29C0A2EB00DC1881 /* common.h in Headers */,
 				BD3AB8C229BFB1B5001E6C8C /* blake2b-load-avx2.h in Headers */,
 				BD3AB8C329BFB1B5001E6C8C /* blake2.h in Headers */,
+				BD7DB9172A6FD950002804E3 /* asm_cet.h in Headers */,
 				BD3AB8C429BFB1B5001E6C8C /* blake2b-compress-ssse3.h in Headers */,
 				BD3AB8C529BFB1B5001E6C8C /* blake2b-load-sse41.h in Headers */,
 				BD3AB8C629BFB1B5001E6C8C /* blake2b-compress-avx2.h in Headers */,
