@@ -10,6 +10,8 @@
 
 $(SRCROOT)/../../../src/libsodium/include/sodium.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/core.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_aegis128l.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_aegis256.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_aes256gcm.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_chacha20poly1305.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_aead_xchacha20poly1305.h
@@ -33,6 +35,8 @@ $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash_sha256.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash_sha512.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_blake2b.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_hkdf_sha256.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_hkdf_sha512.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kx.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_onetimeauth_poly1305.h
@@ -52,6 +56,7 @@ $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_secretstream_xchacha20po
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_shorthash_siphash24.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_shorthash.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_sign_ed25519.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_sign_edwards25519sha512batch.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_sign.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_chacha20.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream_salsa20.h

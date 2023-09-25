@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -14,6 +14,9 @@
 				BD855E1E29C10D28009AE24C /* CopyFiles */,
 			);
 			dependencies = (
+				BDCD6F4E2AC1BCFB00F92891 /* PBXTargetDependency */,
+				BDCD6F502AC1BCFB00F92891 /* PBXTargetDependency */,
+				BDCD6F522AC1BCFB00F92891 /* PBXTargetDependency */,
 				BD855D8429C10B91009AE24C /* PBXTargetDependency */,
 				BD855D8629C10B91009AE24C /* PBXTargetDependency */,
 				BD855D8829C10B91009AE24C /* PBXTargetDependency */,
@@ -716,7 +719,6 @@
 		BD855B4A29C102EB009AE24C /* libsse41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DF29C0BEB600DC1881 /* libsse41.a */; };
 		BD855B4B29C102EB009AE24C /* libssse3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5E129C0BEB600DC1881 /* libssse3.a */; };
 		BD855B4C29C102F9009AE24C /* secretbox8.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD98D54529C0BE6000DC1881 /* secretbox8.exp */; };
-		BD855B6829C1033B009AE24C /* secretstream.c in Sources */ = {isa = PBXBuildFile; fileRef = BD98D5AD29C0BE6000DC1881 /* secretstream.c */; };
 		BD855B6929C10341009AE24C /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D529C0BEB600DC1881 /* libaesni.a */; };
 		BD855B6A29C10341009AE24C /* libavx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D729C0BEB600DC1881 /* libavx2.a */; };
 		BD855B6B29C10341009AE24C /* libavx512f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D929C0BEB600DC1881 /* libavx512f.a */; };
@@ -725,7 +727,6 @@
 		BD855B6E29C10341009AE24C /* libsse2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DD29C0BEB600DC1881 /* libsse2.a */; };
 		BD855B6F29C10341009AE24C /* libsse41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DF29C0BEB600DC1881 /* libsse41.a */; };
 		BD855B7029C10341009AE24C /* libssse3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5E129C0BEB600DC1881 /* libssse3.a */; };
-		BD855B7129C1034E009AE24C /* secretstream.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD98D55D29C0BE6000DC1881 /* secretstream.exp */; };
 		BD855B8D29C103AA009AE24C /* shorthash.c in Sources */ = {isa = PBXBuildFile; fileRef = BD98D5AF29C0BE6000DC1881 /* shorthash.c */; };
 		BD855B8E29C103B0009AE24C /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D529C0BEB600DC1881 /* libaesni.a */; };
 		BD855B8F29C103B0009AE24C /* libavx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D729C0BEB600DC1881 /* libavx2.a */; };
@@ -869,6 +870,42 @@
 		BD855E2029C10D60009AE24C /* run.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD855E1F29C10D53009AE24C /* run.sh */; };
 		BD98D5C329C0BEA600DC1881 /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = BD98D52A29C0BE6000DC1881 /* auth.c */; };
 		BD98D5E329C0BED000DC1881 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BDAD429F2AC1B87200799C1E /* aead_aegis128l.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAD429D2AC1B86B00799C1E /* aead_aegis128l.c */; };
+		BDAD42A02AC1B8F700799C1E /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D529C0BEB600DC1881 /* libaesni.a */; };
+		BDAD42A12AC1B8F700799C1E /* libarmcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAD429B2AC1B81000799C1E /* libarmcrypto.a */; };
+		BDAD42A22AC1B8F700799C1E /* libavx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D729C0BEB600DC1881 /* libavx2.a */; };
+		BDAD42A32AC1B8F700799C1E /* libavx512f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D929C0BEB600DC1881 /* libavx512f.a */; };
+		BDAD42A42AC1B8F700799C1E /* librdrand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DB29C0BEB600DC1881 /* librdrand.a */; };
+		BDAD42A52AC1B8F700799C1E /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BDAD42A62AC1B8F700799C1E /* libsse2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DD29C0BEB600DC1881 /* libsse2.a */; };
+		BDAD42A72AC1B8F700799C1E /* libsse41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DF29C0BEB600DC1881 /* libsse41.a */; };
+		BDAD42A82AC1B8F700799C1E /* libssse3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5E129C0BEB600DC1881 /* libssse3.a */; };
+		BDAD42B42AC1B9C300799C1E /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D529C0BEB600DC1881 /* libaesni.a */; };
+		BDAD42B52AC1B9C300799C1E /* libarmcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAD429B2AC1B81000799C1E /* libarmcrypto.a */; };
+		BDAD42B62AC1B9C300799C1E /* libavx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D729C0BEB600DC1881 /* libavx2.a */; };
+		BDAD42B72AC1B9C300799C1E /* libavx512f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D929C0BEB600DC1881 /* libavx512f.a */; };
+		BDAD42B82AC1B9C300799C1E /* librdrand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DB29C0BEB600DC1881 /* librdrand.a */; };
+		BDAD42B92AC1B9C300799C1E /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BDAD42BA2AC1B9C300799C1E /* libsse2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DD29C0BEB600DC1881 /* libsse2.a */; };
+		BDAD42BB2AC1B9C300799C1E /* libsse41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DF29C0BEB600DC1881 /* libsse41.a */; };
+		BDAD42BC2AC1B9C300799C1E /* libssse3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5E129C0BEB600DC1881 /* libssse3.a */; };
+		BDAD42BD2AC1B9D200799C1E /* aead_aegis256.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAD429E2AC1B86B00799C1E /* aead_aegis256.c */; };
+		BDCD6F332AC1BB7A00F92891 /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D529C0BEB600DC1881 /* libaesni.a */; };
+		BDCD6F342AC1BB7A00F92891 /* libarmcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAD429B2AC1B81000799C1E /* libarmcrypto.a */; };
+		BDCD6F352AC1BB7A00F92891 /* libavx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D729C0BEB600DC1881 /* libavx2.a */; };
+		BDCD6F362AC1BB7A00F92891 /* libavx512f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D929C0BEB600DC1881 /* libavx512f.a */; };
+		BDCD6F372AC1BB7A00F92891 /* librdrand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DB29C0BEB600DC1881 /* librdrand.a */; };
+		BDCD6F382AC1BB7A00F92891 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BDCD6F392AC1BB7A00F92891 /* libsse2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DD29C0BEB600DC1881 /* libsse2.a */; };
+		BDCD6F3A2AC1BB7A00F92891 /* libsse41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DF29C0BEB600DC1881 /* libsse41.a */; };
+		BDCD6F3B2AC1BB7A00F92891 /* libssse3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5E129C0BEB600DC1881 /* libssse3.a */; };
+		BDCD6F3C2AC1BB8500F92891 /* kdf_hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAD42E22AC1BA4600799C1E /* kdf_hkdf.c */; };
+		BDCD6F3E2AC1BBD800F92891 /* secretstream_xchacha20poly1305.c in Sources */ = {isa = PBXBuildFile; fileRef = BDCD6F3D2AC1BBD800F92891 /* secretstream_xchacha20poly1305.c */; };
+		BDCD6F3F2AC1BC2800F92891 /* libarmcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAD429B2AC1B81000799C1E /* libarmcrypto.a */; };
+		BDCD6F532AC1BE6600F92891 /* aead_aegis128l.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BDCD6F432AC1BC7E00F92891 /* aead_aegis128l.exp */; };
+		BDCD6F542AC1BE7A00F92891 /* aead_aegis256.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BDCD6F422AC1BC7E00F92891 /* aead_aegis256.exp */; };
+		BDCD6F552AC1BE9E00F92891 /* kdf_hkdf.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BDCD6F452AC1BC7E00F92891 /* kdf_hkdf.exp */; };
+		BDCD6F562AC1BEBA00F92891 /* secretstream_xchacha20poly1305.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BDCD6F442AC1BC7E00F92891 /* secretstream_xchacha20poly1305.exp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -5786,6 +5823,230 @@
 			remoteGlobalIDString = BD3AB78F29BF7B28001E6C8C;
 			remoteInfo = libsodium;
 		};
+		BDAD429A2AC1B81000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAD42402AC1958000799C1E;
+			remoteInfo = libarmcrypto;
+		};
+		BDAD42BE2AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D34C29C06B1D00DC1881;
+			remoteInfo = libaesni;
+		};
+		BDAD42C02AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAD423F2AC1958000799C1E;
+			remoteInfo = libarmcrypto;
+		};
+		BDAD42C22AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D35829C076B300DC1881;
+			remoteInfo = libavx2;
+		};
+		BDAD42C42AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D36529C0789200DC1881;
+			remoteInfo = libavx512f;
+		};
+		BDAD42C62AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D36F29C079E900DC1881;
+			remoteInfo = librdrand;
+		};
+		BDAD42C82AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3AB78F29BF7B28001E6C8C;
+			remoteInfo = libsodium;
+		};
+		BDAD42CA2AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D37929C07B7B00DC1881;
+			remoteInfo = libsse2;
+		};
+		BDAD42CC2AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D38529C07DCD00DC1881;
+			remoteInfo = libsse41;
+		};
+		BDAD42CE2AC1B9F000799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D38F29C07ECA00DC1881;
+			remoteInfo = libssse3;
+		};
+		BDAD42D02AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D34C29C06B1D00DC1881;
+			remoteInfo = libaesni;
+		};
+		BDAD42D22AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAD423F2AC1958000799C1E;
+			remoteInfo = libarmcrypto;
+		};
+		BDAD42D42AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D35829C076B300DC1881;
+			remoteInfo = libavx2;
+		};
+		BDAD42D62AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D36529C0789200DC1881;
+			remoteInfo = libavx512f;
+		};
+		BDAD42D82AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D36F29C079E900DC1881;
+			remoteInfo = librdrand;
+		};
+		BDAD42DA2AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3AB78F29BF7B28001E6C8C;
+			remoteInfo = libsodium;
+		};
+		BDAD42DC2AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D37929C07B7B00DC1881;
+			remoteInfo = libsse2;
+		};
+		BDAD42DE2AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D38529C07DCD00DC1881;
+			remoteInfo = libsse41;
+		};
+		BDAD42E02AC1B9FC00799C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D38F29C07ECA00DC1881;
+			remoteInfo = libssse3;
+		};
+		BDCD6F212AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D34C29C06B1D00DC1881;
+			remoteInfo = libaesni;
+		};
+		BDCD6F232AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAD423F2AC1958000799C1E;
+			remoteInfo = libarmcrypto;
+		};
+		BDCD6F252AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D35829C076B300DC1881;
+			remoteInfo = libavx2;
+		};
+		BDCD6F272AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D36529C0789200DC1881;
+			remoteInfo = libavx512f;
+		};
+		BDCD6F292AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D36F29C079E900DC1881;
+			remoteInfo = librdrand;
+		};
+		BDCD6F2B2AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3AB78F29BF7B28001E6C8C;
+			remoteInfo = libsodium;
+		};
+		BDCD6F2D2AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D37929C07B7B00DC1881;
+			remoteInfo = libsse2;
+		};
+		BDCD6F2F2AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D38529C07DCD00DC1881;
+			remoteInfo = libsse41;
+		};
+		BDCD6F312AC1BB6C00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD98D38F29C07ECA00DC1881;
+			remoteInfo = libssse3;
+		};
+		BDCD6F402AC1BC3500F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAD423F2AC1958000799C1E;
+			remoteInfo = libarmcrypto;
+		};
+		BDCD6F4D2AC1BCFB00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAD42902AC1B81000799C1E;
+			remoteInfo = aead_aegis128l;
+		};
+		BDCD6F4F2AC1BCFB00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAD42AC2AC1B99D00799C1E;
+			remoteInfo = aead_aegis256;
+		};
+		BDCD6F512AC1BCFB00F92891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDCD6F162AC1BB4300F92891;
+			remoteInfo = kdf_hkdf;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -6405,7 +6666,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				BD855B7129C1034E009AE24C /* secretstream.exp in CopyFiles */,
+				BDCD6F562AC1BEBA00F92891 /* secretstream_xchacha20poly1305.exp in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6569,6 +6830,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDAD428F2AC1B81000799C1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BDCD6F532AC1BE6600F92891 /* aead_aegis128l.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAD42AB2AC1B99D00799C1E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BDCD6F542AC1BE7A00F92891 /* aead_aegis256.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDCD6F152AC1BB4300F92891 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BDCD6F552AC1BE9E00F92891 /* kdf_hkdf.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -6634,7 +6925,7 @@
 		BD855AE229C10219009AE24C /* secretbox2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = secretbox2; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD855B0729C1026E009AE24C /* secretbox7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = secretbox7; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD855B2C29C102D2009AE24C /* secretbox8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = secretbox8; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD855B5129C10329009AE24C /* secretstream */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = secretstream; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD855B5129C10329009AE24C /* secretstream_xchacha20poly1305 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = secretstream_xchacha20poly1305; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD855B7629C10395009AE24C /* shorthash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shorthash; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD855B9B29C103F0009AE24C /* sign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sign; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD855BC029C1043E009AE24C /* siphashx24 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = siphashx24; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6721,7 +7012,6 @@
 		BD98D55A29C0BE6000DC1881 /* aead_chacha20poly13052.exp */ = {isa = PBXFileReference; explicitFileType = text; path = aead_chacha20poly13052.exp; sourceTree = "<group>"; };
 		BD98D55B29C0BE6000DC1881 /* sign.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
 		BD98D55C29C0BE6000DC1881 /* core4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core4.c; sourceTree = "<group>"; };
-		BD98D55D29C0BE6000DC1881 /* secretstream.exp */ = {isa = PBXFileReference; explicitFileType = text; path = secretstream.exp; sourceTree = "<group>"; };
 		BD98D55E29C0BE6000DC1881 /* hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
 		BD98D55F29C0BE6000DC1881 /* siphashx24.exp */ = {isa = PBXFileReference; explicitFileType = text; path = siphashx24.exp; sourceTree = "<group>"; };
 		BD98D56029C0BE6000DC1881 /* box_seal.exp */ = {isa = PBXFileReference; explicitFileType = text; path = box_seal.exp; sourceTree = "<group>"; };
@@ -6793,7 +7083,6 @@
 		BD98D5A929C0BE6000DC1881 /* stream4.exp */ = {isa = PBXFileReference; explicitFileType = text; path = stream4.exp; sourceTree = "<group>"; };
 		BD98D5AB29C0BE6000DC1881 /* metamorphic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = metamorphic.c; sourceTree = "<group>"; };
 		BD98D5AC29C0BE6000DC1881 /* pwhash_scrypt_ll.exp */ = {isa = PBXFileReference; explicitFileType = text; path = pwhash_scrypt_ll.exp; sourceTree = "<group>"; };
-		BD98D5AD29C0BE6000DC1881 /* secretstream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = secretstream.c; sourceTree = "<group>"; };
 		BD98D5AE29C0BE6000DC1881 /* sodium_utils2.exp */ = {isa = PBXFileReference; explicitFileType = text; path = sodium_utils2.exp; sourceTree = "<group>"; };
 		BD98D5AF29C0BE6000DC1881 /* shorthash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shorthash.c; sourceTree = "<group>"; };
 		BD98D5B029C0BE6000DC1881 /* stream2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stream2.c; sourceTree = "<group>"; };
@@ -6807,6 +7096,17 @@
 		BD98D5BC29C0BE9400DC1881 /* auth */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = auth; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sodium.xcodeproj; path = ../sodium/sodium.xcodeproj; sourceTree = "<group>"; };
 		BD98D5E729C0BF8900DC1881 /* quirks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quirks.h; sourceTree = "<group>"; };
+		BDAD42912AC1B81000799C1E /* aead_aegis128l */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aead_aegis128l; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAD429D2AC1B86B00799C1E /* aead_aegis128l.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aead_aegis128l.c; sourceTree = "<group>"; };
+		BDAD429E2AC1B86B00799C1E /* aead_aegis256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aead_aegis256.c; sourceTree = "<group>"; };
+		BDAD42AD2AC1B99D00799C1E /* aead_aegis256 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aead_aegis256; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAD42E22AC1BA4600799C1E /* kdf_hkdf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kdf_hkdf.c; sourceTree = "<group>"; };
+		BDCD6F172AC1BB4300F92891 /* kdf_hkdf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kdf_hkdf; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCD6F3D2AC1BBD800F92891 /* secretstream_xchacha20poly1305.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secretstream_xchacha20poly1305.c; sourceTree = "<group>"; };
+		BDCD6F422AC1BC7E00F92891 /* aead_aegis256.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = aead_aegis256.exp; sourceTree = "<group>"; };
+		BDCD6F432AC1BC7E00F92891 /* aead_aegis128l.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = aead_aegis128l.exp; sourceTree = "<group>"; };
+		BDCD6F442AC1BC7E00F92891 /* secretstream_xchacha20poly1305.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = secretstream_xchacha20poly1305.exp; sourceTree = "<group>"; };
+		BDCD6F452AC1BC7E00F92891 /* kdf_hkdf.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = kdf_hkdf.exp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -7729,6 +8029,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCD6F3F2AC1BC2800F92891 /* libarmcrypto.a in Frameworks */,
 				BD855B6929C10341009AE24C /* libaesni.a in Frameworks */,
 				BD855B6A29C10341009AE24C /* libavx2.a in Frameworks */,
 				BD855B6B29C10341009AE24C /* libavx512f.a in Frameworks */,
@@ -7965,6 +8266,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDAD428E2AC1B81000799C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAD42A02AC1B8F700799C1E /* libaesni.a in Frameworks */,
+				BDAD42A12AC1B8F700799C1E /* libarmcrypto.a in Frameworks */,
+				BDAD42A22AC1B8F700799C1E /* libavx2.a in Frameworks */,
+				BDAD42A32AC1B8F700799C1E /* libavx512f.a in Frameworks */,
+				BDAD42A42AC1B8F700799C1E /* librdrand.a in Frameworks */,
+				BDAD42A52AC1B8F700799C1E /* libsodium.a in Frameworks */,
+				BDAD42A62AC1B8F700799C1E /* libsse2.a in Frameworks */,
+				BDAD42A72AC1B8F700799C1E /* libsse41.a in Frameworks */,
+				BDAD42A82AC1B8F700799C1E /* libssse3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAD42AA2AC1B99D00799C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAD42B42AC1B9C300799C1E /* libaesni.a in Frameworks */,
+				BDAD42B52AC1B9C300799C1E /* libarmcrypto.a in Frameworks */,
+				BDAD42B62AC1B9C300799C1E /* libavx2.a in Frameworks */,
+				BDAD42B72AC1B9C300799C1E /* libavx512f.a in Frameworks */,
+				BDAD42B82AC1B9C300799C1E /* librdrand.a in Frameworks */,
+				BDAD42B92AC1B9C300799C1E /* libsodium.a in Frameworks */,
+				BDAD42BA2AC1B9C300799C1E /* libsse2.a in Frameworks */,
+				BDAD42BB2AC1B9C300799C1E /* libsse41.a in Frameworks */,
+				BDAD42BC2AC1B9C300799C1E /* libssse3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDCD6F142AC1BB4300F92891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCD6F332AC1BB7A00F92891 /* libaesni.a in Frameworks */,
+				BDCD6F342AC1BB7A00F92891 /* libarmcrypto.a in Frameworks */,
+				BDCD6F352AC1BB7A00F92891 /* libavx2.a in Frameworks */,
+				BDCD6F362AC1BB7A00F92891 /* libavx512f.a in Frameworks */,
+				BDCD6F372AC1BB7A00F92891 /* librdrand.a in Frameworks */,
+				BDCD6F382AC1BB7A00F92891 /* libsodium.a in Frameworks */,
+				BDCD6F392AC1BB7A00F92891 /* libsse2.a in Frameworks */,
+				BDCD6F3A2AC1BB7A00F92891 /* libsse41.a in Frameworks */,
+				BDCD6F3B2AC1BB7A00F92891 /* libssse3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -8044,7 +8393,7 @@
 				BD855AE229C10219009AE24C /* secretbox2 */,
 				BD855B0729C1026E009AE24C /* secretbox7 */,
 				BD855B2C29C102D2009AE24C /* secretbox8 */,
-				BD855B5129C10329009AE24C /* secretstream */,
+				BD855B5129C10329009AE24C /* secretstream_xchacha20poly1305 */,
 				BD855B7629C10395009AE24C /* shorthash */,
 				BD855B9B29C103F0009AE24C /* sign */,
 				BD855BC029C1043E009AE24C /* siphashx24 */,
@@ -8059,6 +8408,9 @@
 				BD855D0D29C107D9009AE24C /* stream4 */,
 				BD855D3229C10838009AE24C /* verify1 */,
 				BD855D5729C10890009AE24C /* xchacha20 */,
+				BDAD42912AC1B81000799C1E /* aead_aegis128l */,
+				BDAD42AD2AC1B99D00799C1E /* aead_aegis256 */,
+				BDCD6F172AC1BB4300F92891 /* kdf_hkdf */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -8066,6 +8418,10 @@
 		BD98D51529C0BE6000DC1881 /* default */ = {
 			isa = PBXGroup;
 			children = (
+				BDAD429D2AC1B86B00799C1E /* aead_aegis128l.c */,
+				BDCD6F432AC1BC7E00F92891 /* aead_aegis128l.exp */,
+				BDAD429E2AC1B86B00799C1E /* aead_aegis256.c */,
+				BDCD6F422AC1BC7E00F92891 /* aead_aegis256.exp */,
 				BD98D58829C0BE6000DC1881 /* aead_aes256gcm.c */,
 				BD98D54D29C0BE6000DC1881 /* aead_aes256gcm.exp */,
 				BD98D5A129C0BE6000DC1881 /* aead_aes256gcm2.c */,
@@ -8137,6 +8493,8 @@
 				BD98D58C29C0BE6000DC1881 /* hash.exp */,
 				BD98D59C29C0BE6000DC1881 /* hash3.c */,
 				BD98D52029C0BE6000DC1881 /* hash3.exp */,
+				BDAD42E22AC1BA4600799C1E /* kdf_hkdf.c */,
+				BDCD6F452AC1BC7E00F92891 /* kdf_hkdf.exp */,
 				BD98D58029C0BE6000DC1881 /* kdf.c */,
 				BD98D55529C0BE6000DC1881 /* kdf.exp */,
 				BD98D52329C0BE6000DC1881 /* keygen.c */,
@@ -8192,8 +8550,8 @@
 				BD98D58F29C0BE6000DC1881 /* secretbox7.exp */,
 				BD98D57829C0BE6000DC1881 /* secretbox8.c */,
 				BD98D54529C0BE6000DC1881 /* secretbox8.exp */,
-				BD98D5AD29C0BE6000DC1881 /* secretstream.c */,
-				BD98D55D29C0BE6000DC1881 /* secretstream.exp */,
+				BDCD6F3D2AC1BBD800F92891 /* secretstream_xchacha20poly1305.c */,
+				BDCD6F442AC1BC7E00F92891 /* secretstream_xchacha20poly1305.exp */,
 				BD98D5AF29C0BE6000DC1881 /* shorthash.c */,
 				BD98D57429C0BE6000DC1881 /* shorthash.exp */,
 				BD98D55B29C0BE6000DC1881 /* sign.c */,
@@ -8239,6 +8597,7 @@
 				BD98D5DD29C0BEB600DC1881 /* libsse2.a */,
 				BD98D5DF29C0BEB600DC1881 /* libsse41.a */,
 				BD98D5E129C0BEB600DC1881 /* libssse3.a */,
+				BDAD429B2AC1B81000799C1E /* libarmcrypto.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -9787,9 +10146,9 @@
 			productReference = BD855B2C29C102D2009AE24C /* secretbox8 */;
 			productType = "com.apple.product-type.tool";
 		};
-		BD855B5029C10329009AE24C /* secretstream */ = {
+		BD855B5029C10329009AE24C /* secretstream_xchacha20poly1305 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD855B5529C10329009AE24C /* Build configuration list for PBXNativeTarget "secretstream" */;
+			buildConfigurationList = BD855B5529C10329009AE24C /* Build configuration list for PBXNativeTarget "secretstream_xchacha20poly1305" */;
 			buildPhases = (
 				BD855B4D29C10329009AE24C /* Sources */,
 				BD855B4E29C10329009AE24C /* Frameworks */,
@@ -9798,6 +10157,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BDCD6F412AC1BC3500F92891 /* PBXTargetDependency */,
 				BD855B5929C10331009AE24C /* PBXTargetDependency */,
 				BD855B5B29C10331009AE24C /* PBXTargetDependency */,
 				BD855B5D29C10331009AE24C /* PBXTargetDependency */,
@@ -9807,9 +10167,9 @@
 				BD855B6529C10331009AE24C /* PBXTargetDependency */,
 				BD855B6729C10331009AE24C /* PBXTargetDependency */,
 			);
-			name = secretstream;
+			name = secretstream_xchacha20poly1305;
 			productName = secretstream;
-			productReference = BD855B5129C10329009AE24C /* secretstream */;
+			productReference = BD855B5129C10329009AE24C /* secretstream_xchacha20poly1305 */;
 			productType = "com.apple.product-type.tool";
 		};
 		BD855B7529C10395009AE24C /* shorthash */ = {
@@ -10187,6 +10547,84 @@
 			productReference = BD98D5BC29C0BE9400DC1881 /* auth */;
 			productType = "com.apple.product-type.tool";
 		};
+		BDAD42902AC1B81000799C1E /* aead_aegis128l */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAD429C2AC1B81000799C1E /* Build configuration list for PBXNativeTarget "aead_aegis128l" */;
+			buildPhases = (
+				BDAD428D2AC1B81000799C1E /* Sources */,
+				BDAD428E2AC1B81000799C1E /* Frameworks */,
+				BDAD428F2AC1B81000799C1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAD42BF2AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42C12AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42C32AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42C52AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42C72AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42C92AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42CB2AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42CD2AC1B9F000799C1E /* PBXTargetDependency */,
+				BDAD42CF2AC1B9F000799C1E /* PBXTargetDependency */,
+			);
+			name = aead_aegis128l;
+			productName = aead_aegis128l;
+			productReference = BDAD42912AC1B81000799C1E /* aead_aegis128l */;
+			productType = "com.apple.product-type.tool";
+		};
+		BDAD42AC2AC1B99D00799C1E /* aead_aegis256 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAD42B12AC1B99D00799C1E /* Build configuration list for PBXNativeTarget "aead_aegis256" */;
+			buildPhases = (
+				BDAD42A92AC1B99D00799C1E /* Sources */,
+				BDAD42AA2AC1B99D00799C1E /* Frameworks */,
+				BDAD42AB2AC1B99D00799C1E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAD42D12AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42D32AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42D52AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42D72AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42D92AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42DB2AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42DD2AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42DF2AC1B9FC00799C1E /* PBXTargetDependency */,
+				BDAD42E12AC1B9FC00799C1E /* PBXTargetDependency */,
+			);
+			name = aead_aegis256;
+			productName = aead_aegis256;
+			productReference = BDAD42AD2AC1B99D00799C1E /* aead_aegis256 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BDCD6F162AC1BB4300F92891 /* kdf_hkdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDCD6F202AC1BB4300F92891 /* Build configuration list for PBXNativeTarget "kdf_hkdf" */;
+			buildPhases = (
+				BDCD6F132AC1BB4300F92891 /* Sources */,
+				BDCD6F142AC1BB4300F92891 /* Frameworks */,
+				BDCD6F152AC1BB4300F92891 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDCD6F222AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F242AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F262AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F282AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F2A2AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F2C2AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F2E2AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F302AC1BB6C00F92891 /* PBXTargetDependency */,
+				BDCD6F322AC1BB6C00F92891 /* PBXTargetDependency */,
+			);
+			name = kdf_hkdf;
+			productName = kdf_hkdf;
+			productReference = BDCD6F172AC1BB4300F92891 /* kdf_hkdf */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -10194,7 +10632,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					BD85527429C0CABE009AE24C = {
 						CreatedOnToolsVersion = 14.2;
@@ -10430,6 +10868,15 @@
 					BD98D5BB29C0BE9400DC1881 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					BDAD42902AC1B81000799C1E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BDAD42AC2AC1B99D00799C1E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BDCD6F162AC1BB4300F92891 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = BD98D50629C0BE3300DC1881 /* Build configuration list for PBXProject "tests" */;
@@ -10452,6 +10899,8 @@
 			projectRoot = "";
 			targets = (
 				BD855D7F29C10B72009AE24C /* TESTS */,
+				BDAD42902AC1B81000799C1E /* aead_aegis128l */,
+				BDAD42AC2AC1B99D00799C1E /* aead_aegis256 */,
 				BD85532D29C0CE9A009AE24C /* aead_aes256gcm */,
 				BD85535229C0CF56009AE24C /* aead_aes256gcm2 */,
 				BD85537729C0CFB6009AE24C /* aead_chacha20poly1305 */,
@@ -10488,6 +10937,7 @@
 				BD85571729C0E088009AE24C /* hash */,
 				BD85573C29C0E101009AE24C /* hash3 */,
 				BD85576129C0E173009AE24C /* kdf */,
+				BDCD6F162AC1BB4300F92891 /* kdf_hkdf */,
 				BD85578629C0E1D5009AE24C /* keygen */,
 				BD8557AB29C0E227009AE24C /* kx */,
 				BD8557D029C0E32F009AE24C /* metamorphic */,
@@ -10514,7 +10964,7 @@
 				BD855AE129C10219009AE24C /* secretbox2 */,
 				BD855B0629C1026E009AE24C /* secretbox7 */,
 				BD855B2B29C102D2009AE24C /* secretbox8 */,
-				BD855B5029C10329009AE24C /* secretstream */,
+				BD855B5029C10329009AE24C /* secretstream_xchacha20poly1305 */,
 				BD855B7529C10395009AE24C /* shorthash */,
 				BD855B9A29C103F0009AE24C /* sign */,
 				BD855BBF29C1043E009AE24C /* siphashx24 */,
@@ -10595,6 +11045,13 @@
 			fileType = archive.ar;
 			path = libssse3.a;
 			remoteRef = BD98D5E029C0BEB600DC1881 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDAD429B2AC1B81000799C1E /* libarmcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libarmcrypto.a;
+			remoteRef = BDAD429A2AC1B81000799C1E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -11092,7 +11549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD855B6829C1033B009AE24C /* secretstream.c in Sources */,
+				BDCD6F3E2AC1BBD800F92891 /* secretstream_xchacha20poly1305.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11213,6 +11670,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD98D5C329C0BEA600DC1881 /* auth.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAD428D2AC1B81000799C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAD429F2AC1B87200799C1E /* aead_aegis128l.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAD42A92AC1B99D00799C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAD42BD2AC1B9D200799C1E /* aead_aegis256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDCD6F132AC1BB4300F92891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCD6F3C2AC1BB8500F92891 /* kdf_hkdf.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -14606,7 +15087,7 @@
 		};
 		BD855E0029C10B91009AE24C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BD855B5029C10329009AE24C /* secretstream */;
+			target = BD855B5029C10329009AE24C /* secretstream_xchacha20poly1305 */;
 			targetProxy = BD855DFF29C10B91009AE24C /* PBXContainerItemProxy */;
 		};
 		BD855E0229C10B91009AE24C /* PBXTargetDependency */ = {
@@ -14683,6 +15164,161 @@
 			isa = PBXTargetDependency;
 			name = libsodium;
 			targetProxy = BD98D5E429C0BED800DC1881 /* PBXContainerItemProxy */;
+		};
+		BDAD42BF2AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libaesni;
+			targetProxy = BDAD42BE2AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42C12AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libarmcrypto;
+			targetProxy = BDAD42C02AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42C32AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libavx2;
+			targetProxy = BDAD42C22AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42C52AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libavx512f;
+			targetProxy = BDAD42C42AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42C72AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = librdrand;
+			targetProxy = BDAD42C62AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42C92AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsodium;
+			targetProxy = BDAD42C82AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42CB2AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsse2;
+			targetProxy = BDAD42CA2AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42CD2AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsse41;
+			targetProxy = BDAD42CC2AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42CF2AC1B9F000799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libssse3;
+			targetProxy = BDAD42CE2AC1B9F000799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42D12AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libaesni;
+			targetProxy = BDAD42D02AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42D32AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libarmcrypto;
+			targetProxy = BDAD42D22AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42D52AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libavx2;
+			targetProxy = BDAD42D42AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42D72AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libavx512f;
+			targetProxy = BDAD42D62AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42D92AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = librdrand;
+			targetProxy = BDAD42D82AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42DB2AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsodium;
+			targetProxy = BDAD42DA2AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42DD2AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsse2;
+			targetProxy = BDAD42DC2AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42DF2AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsse41;
+			targetProxy = BDAD42DE2AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDAD42E12AC1B9FC00799C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libssse3;
+			targetProxy = BDAD42E02AC1B9FC00799C1E /* PBXContainerItemProxy */;
+		};
+		BDCD6F222AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libaesni;
+			targetProxy = BDCD6F212AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F242AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libarmcrypto;
+			targetProxy = BDCD6F232AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F262AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libavx2;
+			targetProxy = BDCD6F252AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F282AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libavx512f;
+			targetProxy = BDCD6F272AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F2A2AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = librdrand;
+			targetProxy = BDCD6F292AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F2C2AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsodium;
+			targetProxy = BDCD6F2B2AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F2E2AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsse2;
+			targetProxy = BDCD6F2D2AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F302AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsse41;
+			targetProxy = BDCD6F2F2AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F322AC1BB6C00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libssse3;
+			targetProxy = BDCD6F312AC1BB6C00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F412AC1BC3500F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libarmcrypto;
+			targetProxy = BDCD6F402AC1BC3500F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F4E2AC1BCFB00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAD42902AC1B81000799C1E /* aead_aegis128l */;
+			targetProxy = BDCD6F4D2AC1BCFB00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F502AC1BCFB00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAD42AC2AC1B99D00799C1E /* aead_aegis256 */;
+			targetProxy = BDCD6F4F2AC1BCFB00F92891 /* PBXContainerItemProxy */;
+		};
+		BDCD6F522AC1BCFB00F92891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDCD6F162AC1BB4300F92891 /* kdf_hkdf */;
+			targetProxy = BDCD6F512AC1BCFB00F92891 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -16047,6 +16683,60 @@
 			};
 			name = Release;
 		};
+		BDAD42952AC1B81000799C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDAD42962AC1B81000799C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDAD42B22AC1B99D00799C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDAD42B32AC1B99D00799C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDCD6F1B2AC1BB4300F92891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDCD6F1C2AC1BB4300F92891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -16599,7 +17289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD855B5529C10329009AE24C /* Build configuration list for PBXNativeTarget "secretstream" */ = {
+		BD855B5529C10329009AE24C /* Build configuration list for PBXNativeTarget "secretstream_xchacha20poly1305" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD855B5629C10329009AE24C /* Debug */,
@@ -16757,6 +17447,33 @@
 			buildConfigurations = (
 				BD98D5C129C0BE9400DC1881 /* Debug */,
 				BD98D5C229C0BE9400DC1881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAD429C2AC1B81000799C1E /* Build configuration list for PBXNativeTarget "aead_aegis128l" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAD42952AC1B81000799C1E /* Debug */,
+				BDAD42962AC1B81000799C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAD42B12AC1B99D00799C1E /* Build configuration list for PBXNativeTarget "aead_aegis256" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAD42B22AC1B99D00799C1E /* Debug */,
+				BDAD42B32AC1B99D00799C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDCD6F202AC1BB4300F92891 /* Build configuration list for PBXNativeTarget "kdf_hkdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDCD6F1B2AC1BB4300F92891 /* Debug */,
+				BDCD6F1C2AC1BB4300F92891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
