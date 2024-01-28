@@ -103,9 +103,17 @@ pub fn build(b: *std.build.Builder) !void {
         lib.defineCMacro("HAVE_TI_MODE", "1");
 
         if (target.cpu_arch) |arch| {
-            switch (arch.endian()) {
-                .Big => lib.defineCMacro("NATIVE_BIG_ENDIAN", "1"),
-                .Little => lib.defineCMacro("NATIVE_LITTLE_ENDIAN", "1"),
+            const endian = arch.endian();
+            if (@hasField(@TypeOf(endian), "big")) {
+                switch (endian) {
+                    .big => lib.defineCMacro("NATIVE_BIG_ENDIAN", "1"),
+                    .little => lib.defineCMacro("NATIVE_LITTLE_ENDIAN", "1"),
+                }
+            } else {
+                switch (endian) {
+                    .Big => lib.defineCMacro("NATIVE_BIG_ENDIAN", "1"),
+                    .Little => lib.defineCMacro("NATIVE_LITTLE_ENDIAN", "1"),
+                }
             }
         }
 
@@ -241,19 +249,24 @@ pub fn build(b: *std.build.Builder) !void {
             else => {},
         }
 
-        var allocator = heap.page_allocator;
+        const allocator = heap.page_allocator;
         var walker = try src_dir.walk(allocator);
         while (try walker.next()) |entry| {
             const name = entry.basename;
             if (mem.endsWith(u8, name, ".c")) {
                 const full_path = try fmt.allocPrint(allocator, "{s}/{s}", .{ src_path, entry.path });
-                lib.addCSourceFiles(&.{full_path}, &.{
+                const flags = &.{
                     "-fvisibility=hidden",
                     "-fno-strict-aliasing",
                     "-fno-strict-overflow",
                     "-fwrapv",
                     "-flax-vector-conversions",
-                });
+                };
+                if (@hasDecl(std.Build.Step.Compile, "AddCSourceFilesOptions")) {
+                    lib.addCSourceFiles(.{ .files = &.{full_path}, .flags = flags });
+                } else {
+                    lib.addCSourceFiles(&.{full_path}, flags);
+                }
             } else if (mem.endsWith(u8, name, ".S")) {
                 const full_path = try fmt.allocPrint(allocator, "{s}/{s}", .{ src_path, entry.path });
                 lib.addAssemblyFile(.{ .path = full_path });
@@ -267,7 +280,7 @@ pub fn build(b: *std.build.Builder) !void {
     fs.Dir.makePath(cwd, out_bin_path) catch {};
     const out_bin_dir = try fs.Dir.openDir(cwd, out_bin_path, .{});
     try test_dir.dir.copyFile("run.sh", out_bin_dir, "run.sh", .{});
-    var allocator = heap.page_allocator;
+    const allocator = heap.page_allocator;
     var walker = try test_dir.walk(allocator);
     if (build_tests) {
         while (try walker.next()) |entry| {
@@ -291,8 +304,11 @@ pub fn build(b: *std.build.Builder) !void {
             exe.addIncludePath(.{ .path = "src/libsodium/include" });
             exe.addIncludePath(.{ .path = "test/quirks" });
             const full_path = try fmt.allocPrint(allocator, "{s}/{s}", .{ test_path, entry.path });
-            exe.addCSourceFiles(&.{full_path}, &.{});
-
+            if (@hasDecl(std.Build.Step.Compile, "AddCSourceFilesOptions")) {
+                exe.addCSourceFiles(.{ .files = &.{full_path} });
+            } else {
+                exe.addCSourceFiles(&.{full_path}, &.{});
+            }
             if (enable_benchmarks) {
                 exe.defineCMacro("BENCHMARKS", "1");
                 var buf: [16]u8 = undefined;
