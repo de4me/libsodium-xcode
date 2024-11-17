@@ -4200,7 +4200,8 @@
 		BD3AB3BF29BF4A6B001E6C8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1500;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					BD3AB3C729BF4A6B001E6C8C = {
 						CreatedOnToolsVersion = 14.2;
@@ -5063,6 +5064,7 @@
 		BD39681F2AC9DA370048E7EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_HEADERS_RUN_UNIFDEF = YES;
@@ -5080,6 +5082,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = sodium.modulemap;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libsodium.sodium;
 				PRODUCT_NAME = sodium;
 				SDKROOT = iphoneos;
@@ -5091,6 +5094,7 @@
 		BD3968202AC9DA370048E7EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_HEADERS_RUN_UNIFDEF = YES;
@@ -5109,6 +5113,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = sodium.modulemap;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libsodium.sodium;
 				PRODUCT_NAME = sodium;
 				SDKROOT = iphoneos;
@@ -5615,6 +5620,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = sodium.modulemap;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libsodium.sodium;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
@@ -5644,6 +5650,7 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = sodium.modulemap;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libsodium.sodium;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
