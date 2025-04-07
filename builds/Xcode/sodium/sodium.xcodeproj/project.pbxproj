@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		BD17D2EB2D60CD160029891E /* ALL-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD17D2EE2D60CD160029891E /* Build configuration list for PBXAggregateTarget "ALL-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BD17D2F02D60CD320029891E /* PBXTargetDependency */,
+				BD17D2F22D60CD320029891E /* PBXTargetDependency */,
+			);
+			name = "ALL-iOS";
+			packageProductDependencies = (
+			);
+			productName = "ALL-iOS";
+		};
 		BDE9A87429FCCFF300753C5E /* ALL */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = BDE9A87729FCCFF300753C5E /* Build configuration list for PBXAggregateTarget "ALL" */;
@@ -1178,6 +1192,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BD17D2EF2D60CD320029891E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD3AB3BF29BF4A6B001E6C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3968222AC9DA430048E7EA;
+			remoteInfo = "libsodium-iOS";
+		};
+		BD17D2F12D60CD320029891E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD3AB3BF29BF4A6B001E6C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3966DA2AC9DA370048E7EA;
+			remoteInfo = "sodium-iOS";
+		};
 		BD3968242AC9DA430048E7EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BD3AB3BF29BF4A6B001E6C8C /* Project object */;
@@ -4203,6 +4231,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					BD17D2EB2D60CD160029891E = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					BD3AB3C729BF4A6B001E6C8C = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -4272,6 +4303,7 @@
 				BD3969912AC9E2AA0048E7EA /* libsse41-iOS */,
 				BD39699B2AC9E2B60048E7EA /* libssse3-iOS */,
 				BD39694F2AC9DAA30048E7EA /* libarmcrypto-iOS */,
+				BD17D2EB2D60CD160029891E /* ALL-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -4928,6 +4960,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BD17D2F02D60CD320029891E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3968222AC9DA430048E7EA /* libsodium-iOS */;
+			targetProxy = BD17D2EF2D60CD320029891E /* PBXContainerItemProxy */;
+		};
+		BD17D2F22D60CD320029891E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3966DA2AC9DA370048E7EA /* sodium-iOS */;
+			targetProxy = BD17D2F12D60CD320029891E /* PBXContainerItemProxy */;
+		};
 		BD3968232AC9DA430048E7EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BDAD423F2AC1958000799C1E /* libarmcrypto */;
@@ -5061,6 +5103,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BD17D2EC2D60CD160029891E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD17D2ED2D60CD160029891E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BD39681F2AC9DA370048E7EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5980,6 +6038,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BD17D2EE2D60CD160029891E /* Build configuration list for PBXAggregateTarget "ALL-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD17D2EC2D60CD160029891E /* Debug */,
+				BD17D2ED2D60CD160029891E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD39681E2AC9DA370048E7EA /* Build configuration list for PBXNativeTarget "sodium-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
