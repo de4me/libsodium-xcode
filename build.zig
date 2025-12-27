@@ -7,8 +7,9 @@ const Compile = std.Build.Step.Compile;
 const Target = std.Target;
 
 fn initLibConfig(b: *std.Build, target: std.Build.ResolvedTarget, lib: *Compile) void {
-    lib.linkLibC();
-    lib.addIncludePath(b.path("src/libsodium/include/sodium"));
+    lib.root_module.link_libc = true;
+    lib.lto = null;
+    lib.root_module.addIncludePath(b.path("src/libsodium/include/sodium"));
     lib.root_module.addCMacro("_GNU_SOURCE", "1");
     lib.root_module.addCMacro("CONFIGURED", "1");
     lib.root_module.addCMacro("DEV_MODE", "1");
@@ -20,7 +21,6 @@ fn initLibConfig(b: *std.Build, target: std.Build.ResolvedTarget, lib: *Compile)
     lib.root_module.addCMacro("HAVE_INTTYPES_H", "1");
     lib.root_module.addCMacro("HAVE_STDINT_H", "1");
     lib.root_module.addCMacro("HAVE_TI_MODE", "1");
-    lib.want_lto = false;
 
     const endian = target.result.cpu.arch.endian();
     switch (endian) {
@@ -145,7 +145,10 @@ pub fn build(b: *std.Build) !void {
     defer cwd.close();
 
     const src_path = "src/libsodium";
-    const src_dir = try fs.Dir.openDir(cwd, src_path, .{ .iterate = true, .no_follow = true });
+    const src_dir = if (@hasField(fs.Dir.OpenOptions, "follow_symlinks"))
+        try fs.Dir.openDir(cwd, src_path, .{ .iterate = true, .follow_symlinks = false })
+    else
+        try fs.Dir.openDir(cwd, src_path, .{ .iterate = true, .no_follow = true });
 
     var target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
@@ -206,9 +209,14 @@ pub fn build(b: *std.Build) !void {
     const prebuilt_version_file_path = "builds/msvc/version.h";
     const version_file_path = "include/sodium/version.h";
 
-    if (src_dir.access(version_file_path, .{ .mode = .read_only })) {} else |_| {
-        try cwd.copyFile(prebuilt_version_file_path, src_dir, version_file_path, .{});
-    }
+    if (@hasField(fs.Dir.OpenOptions, "follow_symlinks"))
+        src_dir.access(version_file_path, .{ .read = true }) catch {
+            try cwd.copyFile(prebuilt_version_file_path, src_dir, version_file_path, .{});
+        }
+    else
+        src_dir.access(version_file_path, .{ .mode = .read_only }) catch {
+            try cwd.copyFile(prebuilt_version_file_path, src_dir, version_file_path, .{});
+        };
 
     for (libs.items) |lib| {
         b.installArtifact(lib);
@@ -234,20 +242,23 @@ pub fn build(b: *std.Build) !void {
             if (mem.endsWith(u8, name, ".c")) {
                 const full_path = try fmt.allocPrint(allocator, "{s}/{s}", .{ src_path, entry.path });
 
-                lib.addCSourceFiles(.{
+                lib.root_module.addCSourceFiles(.{
                     .files = &.{full_path},
                     .flags = flags,
                 });
             } else if (mem.endsWith(u8, name, ".S")) {
                 const full_path = try fmt.allocPrint(allocator, "{s}/{s}", .{ src_path, entry.path });
-                lib.addAssemblyFile(b.path(full_path));
+                lib.root_module.addAssemblyFile(b.path(full_path));
             }
         }
     }
 
     const test_path = "test/default";
     const out_bin_path = "zig-out/bin";
-    const test_dir = try fs.Dir.openDir(cwd, test_path, .{ .iterate = true, .no_follow = true });
+    const test_dir = if (@hasField(fs.Dir.OpenOptions, "follow_symlinks"))
+        try fs.Dir.openDir(cwd, test_path, .{ .iterate = true, .follow_symlinks = false })
+    else
+        try fs.Dir.openDir(cwd, test_path, .{ .iterate = true, .no_follow = true });
     fs.Dir.makePath(cwd, out_bin_path) catch {};
     const out_bin_dir = try fs.Dir.openDir(cwd, out_bin_path, .{});
     try test_dir.copyFile("run.sh", out_bin_dir, "run.sh", .{});
@@ -270,14 +281,14 @@ pub fn build(b: *std.Build) !void {
                     .target = target,
                     .optimize = optimize,
                     .strip = true,
+                    .link_libc = true,
                 }),
             });
-            exe.linkLibC();
-            exe.linkLibrary(static_lib);
-            exe.addIncludePath(b.path("src/libsodium/include"));
-            exe.addIncludePath(b.path("test/quirks"));
+            exe.root_module.linkLibrary(static_lib);
+            exe.root_module.addIncludePath(b.path("src/libsodium/include"));
+            exe.root_module.addIncludePath(b.path("test/quirks"));
             const full_path = try fmt.allocPrint(allocator, "{s}/{s}", .{ test_path, entry.path });
-            exe.addCSourceFiles(.{ .files = &.{full_path} });
+            exe.root_module.addCSourceFiles(.{ .files = &.{full_path} });
             if (enable_benchmarks) {
                 exe.root_module.addCMacro("BENCHMARKS", "1");
                 var buf: [16]u8 = undefined;
