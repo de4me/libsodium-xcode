@@ -25,6 +25,7 @@ $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_box.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_ed25519.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_hchacha20.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_hsalsa20.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_keccak1600.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_ristretto255.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_salsa20.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_core_salsa208.h
@@ -34,6 +35,7 @@ $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_generichash.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash_sha256.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash_sha512.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_hash.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_ipcrypt.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_blake2b.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_hkdf_sha256.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_kdf_hkdf_sha512.h
@@ -68,10 +70,14 @@ $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_stream.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_verify_16.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_verify_32.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/crypto_verify_64.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_xof_shake128.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_xof_shake256.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_xof_turboshake128.h
+$(SRCROOT)/../../../src/libsodium/include/sodium/crypto_xof_turboshake256.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/export.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/randombytes_internal_random.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/randombytes_sysrandom.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/randombytes.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/runtime.h
 $(SRCROOT)/../../../src/libsodium/include/sodium/utils.h
-$(SRCROOT)/sodium/version.h
+$(SRCROOT)/sodium/include/version.h

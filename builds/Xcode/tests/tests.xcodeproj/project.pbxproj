@@ -14,6 +14,12 @@
 				BD855E1E29C10D28009AE24C /* CopyFiles */,
 			);
 			dependencies = (
+				BD56A2B42F3910B60071C4EF /* PBXTargetDependency */,
+				BD56A2B62F3910B60071C4EF /* PBXTargetDependency */,
+				BD56A2B82F3910B60071C4EF /* PBXTargetDependency */,
+				BD56A2BA2F3910B60071C4EF /* PBXTargetDependency */,
+				BD56A2652F390D530071C4EF /* PBXTargetDependency */,
+				BD56A2632F390D470071C4EF /* PBXTargetDependency */,
 				BDCD6F4E2AC1BCFB00F92891 /* PBXTargetDependency */,
 				BDCD6F502AC1BCFB00F92891 /* PBXTargetDependency */,
 				BDCD6F522AC1BCFB00F92891 /* PBXTargetDependency */,
@@ -109,6 +115,26 @@
 		BD16B12129C0C11000BA7F2B /* libsse41.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5DF29C0BEB600DC1881 /* libsse41.a */; };
 		BD16B12229C0C11000BA7F2B /* libssse3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5E129C0BEB600DC1881 /* libssse3.a */; };
 		BD16B12429C0C78600BA7F2B /* auth.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD16B12329C0C29100BA7F2B /* auth.exp */; };
+		BD56A24B2F39093B0071C4EF /* ipcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BD56A21E2F3909090071C4EF /* ipcrypt.c */; };
+		BD56A24E2F390A180071C4EF /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BD56A2512F390A6B0071C4EF /* ipcrypt.exp in Sources */ = {isa = PBXBuildFile; fileRef = BD56A2502F390A630071C4EF /* ipcrypt.exp */; };
+		BD56A2522F390AAC0071C4EF /* ipcrypt.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD56A2502F390A630071C4EF /* ipcrypt.exp */; };
+		BD56A25E2F390B050071C4EF /* core_keccak1600.exp in Sources */ = {isa = PBXBuildFile; fileRef = BD56A24F2F390A630071C4EF /* core_keccak1600.exp */; };
+		BD56A25F2F390B050071C4EF /* core_keccak1600.c in Sources */ = {isa = PBXBuildFile; fileRef = BD56A21D2F3909090071C4EF /* core_keccak1600.c */; };
+		BD56A2602F390B1D0071C4EF /* core_keccak1600.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD56A24F2F390A630071C4EF /* core_keccak1600.exp */; };
+		BD56A2612F390B510071C4EF /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BD56A2832F390F7D0071C4EF /* xof_shake128.c in Sources */ = {isa = PBXBuildFile; fileRef = BD56A2702F390F270071C4EF /* xof_shake128.c */; };
+		BD56A2842F390F8B0071C4EF /* xof_shake128.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD56A2712F390F270071C4EF /* xof_shake128.exp */; };
+		BD56A2852F390FB80071C4EF /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BD56A2912F390FF70071C4EF /* xof_shake256.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD56A2732F390F270071C4EF /* xof_shake256.exp */; };
+		BD56A2922F3910000071C4EF /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BD56A2942F39100E0071C4EF /* xof_shake256.c in Sources */ = {isa = PBXBuildFile; fileRef = BD56A2722F390F270071C4EF /* xof_shake256.c */; };
+		BD56A2A02F39103F0071C4EF /* xof_turboshake128.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD56A2752F390F270071C4EF /* xof_turboshake128.exp */; };
+		BD56A2A12F3910440071C4EF /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BD56A2A32F3910530071C4EF /* xof_turboshake128.c in Sources */ = {isa = PBXBuildFile; fileRef = BD56A2742F390F270071C4EF /* xof_turboshake128.c */; };
+		BD56A2AF2F39107D0071C4EF /* xof_turboshake256.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD56A2772F390F270071C4EF /* xof_turboshake256.exp */; };
+		BD56A2B02F3910830071C4EF /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D329C0BEB600DC1881 /* libsodium.a */; };
+		BD56A2B22F39108C0071C4EF /* xof_turboshake256.c in Sources */ = {isa = PBXBuildFile; fileRef = BD56A2762F390F270071C4EF /* xof_turboshake256.c */; };
 		BD85527C29C0CACC009AE24C /* auth2.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD98D55929C0BE6000DC1881 /* auth2.exp */; };
 		BD85528D29C0CAF4009AE24C /* libaesni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D529C0BEB600DC1881 /* libaesni.a */; };
 		BD85528E29C0CAF4009AE24C /* libavx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD98D5D729C0BEB600DC1881 /* libavx2.a */; };
@@ -957,6 +983,118 @@
 			proxyType = 1;
 			remoteGlobalIDString = BD98D38F29C07ECA00DC1881;
 			remoteInfo = libssse3;
+		};
+		BD56A22C2F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3968212AC9DA370048E7EA;
+			remoteInfo = "sodium-iOS";
+		};
+		BD56A22E2F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3969242AC9DA430048E7EA;
+			remoteInfo = "libsodium-iOS";
+		};
+		BD56A2302F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3969302AC9DA580048E7EA;
+			remoteInfo = "libaesni-iOS";
+		};
+		BD56A2322F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3969772AC9E2810048E7EA;
+			remoteInfo = "libavx2-iOS";
+		};
+		BD56A2342F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3969812AC9E28C0048E7EA;
+			remoteInfo = "libavx512f-iOS";
+		};
+		BD56A2362F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD39694E2AC9DA9A0048E7EA;
+			remoteInfo = "librdrand-iOS";
+		};
+		BD56A2382F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3969902AC9E29D0048E7EA;
+			remoteInfo = "libsse2-iOS";
+		};
+		BD56A23A2F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD39699A2AC9E2AA0048E7EA;
+			remoteInfo = "libsse41-iOS";
+		};
+		BD56A23C2F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3969AA2AC9E2B60048E7EA;
+			remoteInfo = "libssse3-iOS";
+		};
+		BD56A23E2F39090A0071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D5C429C0BEB600DC1881 /* sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD39695B2AC9DAA30048E7EA;
+			remoteInfo = "libarmcrypto-iOS";
+		};
+		BD56A2622F390D470071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD56A2432F3909230071C4EF;
+			remoteInfo = ipcrypt;
+		};
+		BD56A2642F390D530071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD56A2562F390AF40071C4EF;
+			remoteInfo = core_keccak1600;
+		};
+		BD56A2B32F3910B60071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD56A27B2F390F500071C4EF;
+			remoteInfo = xof_shake128;
+		};
+		BD56A2B52F3910B60071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD56A2892F390FD90071C4EF;
+			remoteInfo = xof_shake256;
+		};
+		BD56A2B72F3910B60071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD56A2982F3910310071C4EF;
+			remoteInfo = xof_turboshake128;
+		};
+		BD56A2B92F3910B60071C4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD98D50329C0BE3300DC1881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD56A2A72F39106E0071C4EF;
+			remoteInfo = xof_turboshake256;
 		};
 		BD85527D29C0CAEC009AE24C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6050,6 +6188,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BD56A2422F3909230071C4EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD56A2522F390AAC0071C4EF /* ipcrypt.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2552F390AF40071C4EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD56A2602F390B1D0071C4EF /* core_keccak1600.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A27A2F390F500071C4EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD56A2842F390F8B0071C4EF /* xof_shake128.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2882F390FD90071C4EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD56A2912F390FF70071C4EF /* xof_shake256.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2972F3910310071C4EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD56A2A02F39103F0071C4EF /* xof_turboshake128.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2A62F39106E0071C4EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD56A2AF2F39107D0071C4EF /* xof_turboshake256.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD85527329C0CABE009AE24C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -6864,6 +7062,24 @@
 
 /* Begin PBXFileReference section */
 		BD16B12329C0C29100BA7F2B /* auth.exp */ = {isa = PBXFileReference; explicitFileType = text; path = auth.exp; sourceTree = "<group>"; };
+		BD56A21D2F3909090071C4EF /* core_keccak1600.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core_keccak1600.c; sourceTree = "<group>"; };
+		BD56A21E2F3909090071C4EF /* ipcrypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ipcrypt.c; sourceTree = "<group>"; };
+		BD56A2442F3909230071C4EF /* ipcrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ipcrypt; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD56A24F2F390A630071C4EF /* core_keccak1600.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = core_keccak1600.exp; sourceTree = "<group>"; };
+		BD56A2502F390A630071C4EF /* ipcrypt.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = ipcrypt.exp; sourceTree = "<group>"; };
+		BD56A2572F390AF40071C4EF /* core_keccak1600 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = core_keccak1600; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD56A2702F390F270071C4EF /* xof_shake128.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xof_shake128.c; sourceTree = "<group>"; };
+		BD56A2712F390F270071C4EF /* xof_shake128.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = xof_shake128.exp; sourceTree = "<group>"; };
+		BD56A2722F390F270071C4EF /* xof_shake256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xof_shake256.c; sourceTree = "<group>"; };
+		BD56A2732F390F270071C4EF /* xof_shake256.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = xof_shake256.exp; sourceTree = "<group>"; };
+		BD56A2742F390F270071C4EF /* xof_turboshake128.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xof_turboshake128.c; sourceTree = "<group>"; };
+		BD56A2752F390F270071C4EF /* xof_turboshake128.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = xof_turboshake128.exp; sourceTree = "<group>"; };
+		BD56A2762F390F270071C4EF /* xof_turboshake256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xof_turboshake256.c; sourceTree = "<group>"; };
+		BD56A2772F390F270071C4EF /* xof_turboshake256.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = xof_turboshake256.exp; sourceTree = "<group>"; };
+		BD56A27C2F390F500071C4EF /* xof_shake128 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xof_shake128; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD56A28A2F390FD90071C4EF /* xof_shake256 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xof_shake256; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD56A2992F3910310071C4EF /* xof_turboshake128 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xof_turboshake128; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD56A2A82F39106E0071C4EF /* xof_turboshake256 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xof_turboshake256; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD85527529C0CABE009AE24C /* auth2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = auth2; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD85529929C0CB34009AE24C /* auth3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = auth3; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8552BD29C0CBAD009AE24C /* auth5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = auth5; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -7110,6 +7326,54 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BD56A2412F3909230071C4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A24E2F390A180071C4EF /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2542F390AF40071C4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2612F390B510071C4EF /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2792F390F500071C4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2852F390FB80071C4EF /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2872F390FD90071C4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2922F3910000071C4EF /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2962F3910310071C4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2A12F3910440071C4EF /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2A52F39106E0071C4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2B02F3910830071C4EF /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD85527229C0CABE009AE24C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -8411,6 +8675,12 @@
 				BDAD42912AC1B81000799C1E /* aead_aegis128l */,
 				BDAD42AD2AC1B99D00799C1E /* aead_aegis256 */,
 				BDCD6F172AC1BB4300F92891 /* kdf_hkdf */,
+				BD56A2442F3909230071C4EF /* ipcrypt */,
+				BD56A2572F390AF40071C4EF /* core_keccak1600 */,
+				BD56A27C2F390F500071C4EF /* xof_shake128 */,
+				BD56A28A2F390FD90071C4EF /* xof_shake256 */,
+				BD56A2992F3910310071C4EF /* xof_turboshake128 */,
+				BD56A2A82F39106E0071C4EF /* xof_turboshake256 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -8444,6 +8714,8 @@
 				BD98D54229C0BE6000DC1881 /* auth6.exp */,
 				BD98D54B29C0BE6000DC1881 /* auth7.c */,
 				BD98D53729C0BE6000DC1881 /* auth7.exp */,
+				BD98D57129C0BE6000DC1881 /* box.c */,
+				BD98D53D29C0BE6000DC1881 /* box.exp */,
 				BD98D5B629C0BE6000DC1881 /* box_easy.c */,
 				BD98D51D29C0BE6000DC1881 /* box_easy.exp */,
 				BD98D57E29C0BE6000DC1881 /* box_easy2.c */,
@@ -8452,8 +8724,6 @@
 				BD98D56029C0BE6000DC1881 /* box_seal.exp */,
 				BD98D57B29C0BE6000DC1881 /* box_seed.c */,
 				BD98D52C29C0BE6000DC1881 /* box_seed.exp */,
-				BD98D57129C0BE6000DC1881 /* box.c */,
-				BD98D53D29C0BE6000DC1881 /* box.exp */,
 				BD98D57229C0BE6000DC1881 /* box2.c */,
 				BD98D58229C0BE6000DC1881 /* box2.exp */,
 				BD98D53B29C0BE6000DC1881 /* box7.c */,
@@ -8467,6 +8737,8 @@
 				BD98D57D29C0BE6000DC1881 /* codecs.exp */,
 				BD98D53F29C0BE6000DC1881 /* core_ed25519.c */,
 				BD98D54429C0BE6000DC1881 /* core_ed25519.exp */,
+				BD56A21D2F3909090071C4EF /* core_keccak1600.c */,
+				BD56A24F2F390A630071C4EF /* core_keccak1600.exp */,
 				BD98D55629C0BE6000DC1881 /* core_ristretto255.c */,
 				BD98D58329C0BE6000DC1881 /* core_ristretto255.exp */,
 				BD98D58729C0BE6000DC1881 /* core1.c */,
@@ -8493,10 +8765,12 @@
 				BD98D58C29C0BE6000DC1881 /* hash.exp */,
 				BD98D59C29C0BE6000DC1881 /* hash3.c */,
 				BD98D52029C0BE6000DC1881 /* hash3.exp */,
-				BDAD42E22AC1BA4600799C1E /* kdf_hkdf.c */,
-				BDCD6F452AC1BC7E00F92891 /* kdf_hkdf.exp */,
+				BD56A21E2F3909090071C4EF /* ipcrypt.c */,
+				BD56A2502F390A630071C4EF /* ipcrypt.exp */,
 				BD98D58029C0BE6000DC1881 /* kdf.c */,
 				BD98D55529C0BE6000DC1881 /* kdf.exp */,
+				BDAD42E22AC1BA4600799C1E /* kdf_hkdf.c */,
+				BDCD6F452AC1BC7E00F92891 /* kdf_hkdf.exp */,
 				BD98D52329C0BE6000DC1881 /* keygen.c */,
 				BD98D52529C0BE6000DC1881 /* keygen.exp */,
 				BD98D52429C0BE6000DC1881 /* kx.c */,
@@ -8515,19 +8789,19 @@
 				BD98D5B329C0BE6000DC1881 /* pwhash_argon2i.exp */,
 				BD98D5A029C0BE6000DC1881 /* pwhash_argon2id.c */,
 				BD98D51829C0BE6000DC1881 /* pwhash_argon2id.exp */,
-				BD98D53829C0BE6000DC1881 /* pwhash_scrypt_ll.c */,
-				BD98D5AC29C0BE6000DC1881 /* pwhash_scrypt_ll.exp */,
 				BD98D54929C0BE6000DC1881 /* pwhash_scrypt.c */,
 				BD98D53429C0BE6000DC1881 /* pwhash_scrypt.exp */,
+				BD98D53829C0BE6000DC1881 /* pwhash_scrypt_ll.c */,
+				BD98D5AC29C0BE6000DC1881 /* pwhash_scrypt_ll.exp */,
 				BD98D58D29C0BE6000DC1881 /* randombytes.c */,
 				BD98D59329C0BE6000DC1881 /* randombytes.exp */,
 				BD855E1F29C10D53009AE24C /* run.sh */,
+				BD98D58B29C0BE6000DC1881 /* scalarmult.c */,
+				BD98D52E29C0BE6000DC1881 /* scalarmult.exp */,
 				BD98D54829C0BE6000DC1881 /* scalarmult_ed25519.c */,
 				BD98D57F29C0BE6000DC1881 /* scalarmult_ed25519.exp */,
 				BD98D55729C0BE6000DC1881 /* scalarmult_ristretto255.c */,
 				BD98D5B129C0BE6000DC1881 /* scalarmult_ristretto255.exp */,
-				BD98D58B29C0BE6000DC1881 /* scalarmult.c */,
-				BD98D52E29C0BE6000DC1881 /* scalarmult.exp */,
 				BD98D57329C0BE6000DC1881 /* scalarmult2.c */,
 				BD98D53129C0BE6000DC1881 /* scalarmult2.exp */,
 				BD98D59829C0BE6000DC1881 /* scalarmult5.c */,
@@ -8538,12 +8812,12 @@
 				BD98D51629C0BE6000DC1881 /* scalarmult7.exp */,
 				BD98D57929C0BE6000DC1881 /* scalarmult8.c */,
 				BD98D5A629C0BE6000DC1881 /* scalarmult8.exp */,
+				BD98D58529C0BE6000DC1881 /* secretbox.c */,
+				BD98D58629C0BE6000DC1881 /* secretbox.exp */,
 				BD98D54729C0BE6000DC1881 /* secretbox_easy.c */,
 				BD98D53229C0BE6000DC1881 /* secretbox_easy.exp */,
 				BD98D5B529C0BE6000DC1881 /* secretbox_easy2.c */,
 				BD98D56F29C0BE6000DC1881 /* secretbox_easy2.exp */,
-				BD98D58529C0BE6000DC1881 /* secretbox.c */,
-				BD98D58629C0BE6000DC1881 /* secretbox.exp */,
 				BD98D57529C0BE6000DC1881 /* secretbox2.c */,
 				BD98D56829C0BE6000DC1881 /* secretbox2.exp */,
 				BD98D53E29C0BE6000DC1881 /* secretbox7.c */,
@@ -8580,6 +8854,14 @@
 				BD98D56E29C0BE6000DC1881 /* verify1.exp */,
 				BD98D57A29C0BE6000DC1881 /* xchacha20.c */,
 				BD98D59929C0BE6000DC1881 /* xchacha20.exp */,
+				BD56A2702F390F270071C4EF /* xof_shake128.c */,
+				BD56A2712F390F270071C4EF /* xof_shake128.exp */,
+				BD56A2722F390F270071C4EF /* xof_shake256.c */,
+				BD56A2732F390F270071C4EF /* xof_shake256.exp */,
+				BD56A2742F390F270071C4EF /* xof_turboshake128.c */,
+				BD56A2752F390F270071C4EF /* xof_turboshake128.exp */,
+				BD56A2762F390F270071C4EF /* xof_turboshake256.c */,
+				BD56A2772F390F270071C4EF /* xof_turboshake256.exp */,
 			);
 			name = default;
 			path = ../../../test/default;
@@ -8598,6 +8880,16 @@
 				BD98D5DF29C0BEB600DC1881 /* libsse41.a */,
 				BD98D5E129C0BEB600DC1881 /* libssse3.a */,
 				BDAD429B2AC1B81000799C1E /* libarmcrypto.a */,
+				BD56A22D2F39090A0071C4EF /* sodium.framework */,
+				BD56A22F2F39090A0071C4EF /* libsodium.a */,
+				BD56A2312F39090A0071C4EF /* libaesni-iOS.a */,
+				BD56A2332F39090A0071C4EF /* libavx2-iOS.a */,
+				BD56A2352F39090A0071C4EF /* libavx512f-iOS.a */,
+				BD56A2372F39090A0071C4EF /* librdrand-iOS.a */,
+				BD56A2392F39090A0071C4EF /* libsse2-iOS.a */,
+				BD56A23B2F39090A0071C4EF /* libsse41-iOS.a */,
+				BD56A23D2F39090A0071C4EF /* libssse3-iOS.a */,
+				BD56A23F2F39090A0071C4EF /* libarmcrypto-iOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -8621,6 +8913,120 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BD56A2432F3909230071C4EF /* ipcrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56A2482F3909230071C4EF /* Build configuration list for PBXNativeTarget "ipcrypt" */;
+			buildPhases = (
+				BD56A2402F3909230071C4EF /* Sources */,
+				BD56A2412F3909230071C4EF /* Frameworks */,
+				BD56A2422F3909230071C4EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ipcrypt;
+			packageProductDependencies = (
+			);
+			productName = ipcrypt;
+			productReference = BD56A2442F3909230071C4EF /* ipcrypt */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD56A2562F390AF40071C4EF /* core_keccak1600 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56A25B2F390AF40071C4EF /* Build configuration list for PBXNativeTarget "core_keccak1600" */;
+			buildPhases = (
+				BD56A2532F390AF40071C4EF /* Sources */,
+				BD56A2542F390AF40071C4EF /* Frameworks */,
+				BD56A2552F390AF40071C4EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = core_keccak1600;
+			packageProductDependencies = (
+			);
+			productName = core_keccak1600;
+			productReference = BD56A2572F390AF40071C4EF /* core_keccak1600 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD56A27B2F390F500071C4EF /* xof_shake128 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56A2802F390F510071C4EF /* Build configuration list for PBXNativeTarget "xof_shake128" */;
+			buildPhases = (
+				BD56A2782F390F500071C4EF /* Sources */,
+				BD56A2792F390F500071C4EF /* Frameworks */,
+				BD56A27A2F390F500071C4EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xof_shake128;
+			packageProductDependencies = (
+			);
+			productName = xof_shake128;
+			productReference = BD56A27C2F390F500071C4EF /* xof_shake128 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD56A2892F390FD90071C4EF /* xof_shake256 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56A28E2F390FD90071C4EF /* Build configuration list for PBXNativeTarget "xof_shake256" */;
+			buildPhases = (
+				BD56A2862F390FD90071C4EF /* Sources */,
+				BD56A2872F390FD90071C4EF /* Frameworks */,
+				BD56A2882F390FD90071C4EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xof_shake256;
+			packageProductDependencies = (
+			);
+			productName = xof_shake256;
+			productReference = BD56A28A2F390FD90071C4EF /* xof_shake256 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD56A2982F3910310071C4EF /* xof_turboshake128 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56A29D2F3910310071C4EF /* Build configuration list for PBXNativeTarget "xof_turboshake128" */;
+			buildPhases = (
+				BD56A2952F3910310071C4EF /* Sources */,
+				BD56A2962F3910310071C4EF /* Frameworks */,
+				BD56A2972F3910310071C4EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xof_turboshake128;
+			packageProductDependencies = (
+			);
+			productName = xof_turboshake128;
+			productReference = BD56A2992F3910310071C4EF /* xof_turboshake128 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD56A2A72F39106E0071C4EF /* xof_turboshake256 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD56A2AC2F39106E0071C4EF /* Build configuration list for PBXNativeTarget "xof_turboshake256" */;
+			buildPhases = (
+				BD56A2A42F39106E0071C4EF /* Sources */,
+				BD56A2A52F39106E0071C4EF /* Frameworks */,
+				BD56A2A62F39106E0071C4EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xof_turboshake256;
+			packageProductDependencies = (
+			);
+			productName = xof_turboshake256;
+			productReference = BD56A2A82F39106E0071C4EF /* xof_turboshake256 */;
+			productType = "com.apple.product-type.tool";
+		};
 		BD85527429C0CABE009AE24C /* auth2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD85527929C0CABE009AE24C /* Build configuration list for PBXNativeTarget "auth2" */;
@@ -10634,6 +11040,24 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					BD56A2432F3909230071C4EF = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					BD56A2562F390AF40071C4EF = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					BD56A27B2F390F500071C4EF = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					BD56A2892F390FD90071C4EF = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					BD56A2982F3910310071C4EF = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					BD56A2A72F39106E0071C4EF = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					BD85527429C0CABE009AE24C = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -10979,11 +11403,87 @@
 				BD855D0C29C107D9009AE24C /* stream4 */,
 				BD855D3129C10838009AE24C /* verify1 */,
 				BD855D5629C1088F009AE24C /* xchacha20 */,
+				BD56A2432F3909230071C4EF /* ipcrypt */,
+				BD56A2562F390AF40071C4EF /* core_keccak1600 */,
+				BD56A27B2F390F500071C4EF /* xof_shake128 */,
+				BD56A2892F390FD90071C4EF /* xof_shake256 */,
+				BD56A2982F3910310071C4EF /* xof_turboshake128 */,
+				BD56A2A72F39106E0071C4EF /* xof_turboshake256 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BD56A22D2F39090A0071C4EF /* sodium.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = sodium.framework;
+			remoteRef = BD56A22C2F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A22F2F39090A0071C4EF /* libsodium.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsodium.a;
+			remoteRef = BD56A22E2F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A2312F39090A0071C4EF /* libaesni-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libaesni-iOS.a";
+			remoteRef = BD56A2302F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A2332F39090A0071C4EF /* libavx2-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libavx2-iOS.a";
+			remoteRef = BD56A2322F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A2352F39090A0071C4EF /* libavx512f-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libavx512f-iOS.a";
+			remoteRef = BD56A2342F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A2372F39090A0071C4EF /* librdrand-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "librdrand-iOS.a";
+			remoteRef = BD56A2362F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A2392F39090A0071C4EF /* libsse2-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsse2-iOS.a";
+			remoteRef = BD56A2382F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A23B2F39090A0071C4EF /* libsse41-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsse41-iOS.a";
+			remoteRef = BD56A23A2F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A23D2F39090A0071C4EF /* libssse3-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libssse3-iOS.a";
+			remoteRef = BD56A23C2F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD56A23F2F39090A0071C4EF /* libarmcrypto-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libarmcrypto-iOS.a";
+			remoteRef = BD56A23E2F39090A0071C4EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BD98D5D129C0BEB600DC1881 /* sodium.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -11057,6 +11557,56 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BD56A2402F3909230071C4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A24B2F39093B0071C4EF /* ipcrypt.c in Sources */,
+				BD56A2512F390A6B0071C4EF /* ipcrypt.exp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2532F390AF40071C4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A25E2F390B050071C4EF /* core_keccak1600.exp in Sources */,
+				BD56A25F2F390B050071C4EF /* core_keccak1600.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2782F390F500071C4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2832F390F7D0071C4EF /* xof_shake128.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2862F390FD90071C4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2942F39100E0071C4EF /* xof_shake256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2952F3910310071C4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2A32F3910530071C4EF /* xof_turboshake128.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD56A2A42F39106E0071C4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD56A2B22F39108C0071C4EF /* xof_turboshake256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD85527129C0CABE009AE24C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -11734,6 +12284,36 @@
 			isa = PBXTargetDependency;
 			name = libssse3;
 			targetProxy = BD16B11A29C0C10300BA7F2B /* PBXContainerItemProxy */;
+		};
+		BD56A2632F390D470071C4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD56A2432F3909230071C4EF /* ipcrypt */;
+			targetProxy = BD56A2622F390D470071C4EF /* PBXContainerItemProxy */;
+		};
+		BD56A2652F390D530071C4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD56A2562F390AF40071C4EF /* core_keccak1600 */;
+			targetProxy = BD56A2642F390D530071C4EF /* PBXContainerItemProxy */;
+		};
+		BD56A2B42F3910B60071C4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD56A27B2F390F500071C4EF /* xof_shake128 */;
+			targetProxy = BD56A2B32F3910B60071C4EF /* PBXContainerItemProxy */;
+		};
+		BD56A2B62F3910B60071C4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD56A2892F390FD90071C4EF /* xof_shake256 */;
+			targetProxy = BD56A2B52F3910B60071C4EF /* PBXContainerItemProxy */;
+		};
+		BD56A2B82F3910B60071C4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD56A2982F3910310071C4EF /* xof_turboshake128 */;
+			targetProxy = BD56A2B72F3910B60071C4EF /* PBXContainerItemProxy */;
+		};
+		BD56A2BA2F3910B60071C4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD56A2A72F39106E0071C4EF /* xof_turboshake256 */;
+			targetProxy = BD56A2B92F3910B60071C4EF /* PBXContainerItemProxy */;
 		};
 		BD85527E29C0CAEC009AE24C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -15323,6 +15903,174 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BD56A2492F3909230071C4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD56A24A2F3909230071C4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD56A25C2F390AF40071C4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD56A25D2F390AF40071C4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD56A2812F390F510071C4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD56A2822F390F510071C4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD56A28F2F390FD90071C4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD56A2902F390FD90071C4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD56A29E2F3910310071C4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD56A29F2F3910310071C4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD56A2AD2F39106E0071C4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD56A2AE2F39106E0071C4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BD85527A29C0CABE009AE24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -16604,6 +17352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /bin;
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -16658,6 +17407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /bin;
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -16740,6 +17490,60 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BD56A2482F3909230071C4EF /* Build configuration list for PBXNativeTarget "ipcrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD56A2492F3909230071C4EF /* Debug */,
+				BD56A24A2F3909230071C4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56A25B2F390AF40071C4EF /* Build configuration list for PBXNativeTarget "core_keccak1600" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD56A25C2F390AF40071C4EF /* Debug */,
+				BD56A25D2F390AF40071C4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56A2802F390F510071C4EF /* Build configuration list for PBXNativeTarget "xof_shake128" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD56A2812F390F510071C4EF /* Debug */,
+				BD56A2822F390F510071C4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56A28E2F390FD90071C4EF /* Build configuration list for PBXNativeTarget "xof_shake256" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD56A28F2F390FD90071C4EF /* Debug */,
+				BD56A2902F390FD90071C4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56A29D2F3910310071C4EF /* Build configuration list for PBXNativeTarget "xof_turboshake128" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD56A29E2F3910310071C4EF /* Debug */,
+				BD56A29F2F3910310071C4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD56A2AC2F39106E0071C4EF /* Build configuration list for PBXNativeTarget "xof_turboshake256" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD56A2AD2F39106E0071C4EF /* Debug */,
+				BD56A2AE2F39106E0071C4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD85527929C0CABE009AE24C /* Build configuration list for PBXNativeTarget "auth2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
