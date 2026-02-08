@@ -26,6 +26,8 @@
 *.vs/
 *.wasm
 *.wast
+*.xcscheme
+*.xcuserdatad/
 *~
 /bin/
 /obj/
