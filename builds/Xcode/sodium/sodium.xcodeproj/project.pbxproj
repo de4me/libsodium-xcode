@@ -3713,21 +3713,21 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_DEBUG=1",
+					"DEBUG=1",
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphone*][arch=arm64]" = (
-					"_DEBUG=1",
+					"DEBUG=1",
 					"$(SODIUM_DEFS_ARM64)",
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphone*][arch=x86_64]" = (
-					"_DEBUG=1",
+					"DEBUG=1",
 					"$(SODIUM_DEFS_X86_64)",
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=macosx*][arch=arm64]" = (
-					"_DEBUG=1",
+					"DEBUG=1",
 					"HAVE_CATCHABLE_SEGV=1",
 					"HAVE_CATCHABLE_ABRT=1",
 					"HAVE_SYS_RANDOM_H=1",
@@ -3736,7 +3736,7 @@
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=macosx*][arch=x86_64]" = (
-					"_DEBUG=1",
+					"DEBUG=1",
 					"HAVE_CATCHABLE_SEGV=1",
 					"HAVE_CATCHABLE_ABRT=1",
 					"HAVE_SYS_RANDOM_H=1",
@@ -3757,10 +3757,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(SODIUM_CFLAGS)";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-D_FORTIFY_SOURCE=2",
-					"$(OTHER_CFLAGS)",
-				);
 				SDKROOT = macosx;
 				SODIUM_CFLAGS = "$(SODIUM_CFLAGS_DEFAULT)";
 				"SODIUM_CFLAGS[arch=arm64]" = "$(SODIUM_CFLAGS_ARM64)";
@@ -3824,16 +3820,22 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
-				GCC_PREPROCESSOR_DEFINITIONS = "$(SODIUM_DEFS_DEFAULT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(SODIUM_DEFS_DEFAULT)",
+				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphone*][arch=arm64]" = (
+					"NDEBUG=1",
 					"$(SODIUM_DEFS_ARM64)",
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphone*][arch=x86_64]" = (
+					"NDEBUG=1",
 					"$(SODIUM_DEFS_X86_64)",
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=macosx*][arch=arm64]" = (
+					"NDEBUG=1",
 					"HAVE_CATCHABLE_SEGV=1",
 					"HAVE_CATCHABLE_ABRT=1",
 					"HAVE_SYS_RANDOM_H=1",
@@ -3842,6 +3844,7 @@
 					"$(SODIUM_DEFS_DEFAULT)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[sdk=macosx*][arch=x86_64]" = (
+					"NDEBUG=1",
 					"HAVE_CATCHABLE_SEGV=1",
 					"HAVE_CATCHABLE_ABRT=1",
 					"HAVE_SYS_RANDOM_H=1",
@@ -3861,10 +3864,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "$(SODIUM_CFLAGS)";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-D_FORTIFY_SOURCE=2",
-					"$(OTHER_CFLAGS)",
-				);
 				SDKROOT = macosx;
 				SODIUM_CFLAGS = "$(SODIUM_CFLAGS_DEFAULT)";
 				"SODIUM_CFLAGS[arch=arm64]" = "$(SODIUM_CFLAGS_ARM64)";
