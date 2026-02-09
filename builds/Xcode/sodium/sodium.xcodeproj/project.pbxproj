@@ -1210,6 +1210,14 @@
 		BD98D4FF29C0A2EB00DC1881 /* chacha20_ietf_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = BD98D4EC29C0A2EB00DC1881 /* chacha20_ietf_ext.h */; };
 		BD98D50029C0A2EB00DC1881 /* implementations.h in Headers */ = {isa = PBXBuildFile; fileRef = BD98D4ED29C0A2EB00DC1881 /* implementations.h */; };
 		BD98D50129C0A2EB00DC1881 /* implementations.h in Headers */ = {isa = PBXBuildFile; fileRef = BD98D4ED29C0A2EB00DC1881 /* implementations.h */; };
+		BD9D9A5D2F39EB81008D8D5E /* crypto_ipcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BD569D152F38F0EB0071C4EF /* crypto_ipcrypt.c */; };
+		BD9D9A5E2F39EB81008D8D5E /* crypto_ipcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BD569D152F38F0EB0071C4EF /* crypto_ipcrypt.c */; };
+		BD9D9A5F2F39EBB7008D8D5E /* ipcrypt_soft.c in Sources */ = {isa = PBXBuildFile; fileRef = BD569D1C2F38F0EB0071C4EF /* ipcrypt_soft.c */; };
+		BD9D9A602F39EBB7008D8D5E /* ipcrypt_soft.c in Sources */ = {isa = PBXBuildFile; fileRef = BD569D1C2F38F0EB0071C4EF /* ipcrypt_soft.c */; };
+		BD9D9A622F39F01D008D8D5E /* quirks.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9D9A612F39F01D008D8D5E /* quirks.h */; };
+		BD9D9A632F39F01D008D8D5E /* quirks.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9D9A612F39F01D008D8D5E /* quirks.h */; };
+		BD9D9A642F39F01D008D8D5E /* quirks.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9D9A612F39F01D008D8D5E /* quirks.h */; };
+		BD9D9A652F39F01D008D8D5E /* quirks.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9D9A612F39F01D008D8D5E /* quirks.h */; };
 		BDAD42052AC18DFE00799C1E /* crypto_kdf_hkdf_sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAD42012AC18DFE00799C1E /* crypto_kdf_hkdf_sha256.h */; };
 		BDAD42062AC18DFE00799C1E /* crypto_kdf_hkdf_sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAD42012AC18DFE00799C1E /* crypto_kdf_hkdf_sha256.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BDAD42072AC18DFE00799C1E /* crypto_aead_aegis128l.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAD42022AC18DFE00799C1E /* crypto_aead_aegis128l.h */; };
@@ -1849,6 +1857,7 @@
 		BD98D4EB29C0A2EB00DC1881 /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
 		BD98D4EC29C0A2EB00DC1881 /* chacha20_ietf_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chacha20_ietf_ext.h; sourceTree = "<group>"; };
 		BD98D4ED29C0A2EB00DC1881 /* implementations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implementations.h; sourceTree = "<group>"; };
+		BD9D9A612F39F01D008D8D5E /* quirks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quirks.h; sourceTree = "<group>"; };
 		BDAD42012AC18DFE00799C1E /* crypto_kdf_hkdf_sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_kdf_hkdf_sha256.h; sourceTree = "<group>"; };
 		BDAD42022AC18DFE00799C1E /* crypto_aead_aegis128l.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aead_aegis128l.h; sourceTree = "<group>"; };
 		BDAD42032AC18DFE00799C1E /* crypto_aead_aegis256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aead_aegis256.h; sourceTree = "<group>"; };
@@ -3270,11 +3279,12 @@
 				BD7DB9152A6FD950002804E3 /* asm_cet.h */,
 				BD98D4EC29C0A2EB00DC1881 /* chacha20_ietf_ext.h */,
 				BD98D4EA29C0A2EB00DC1881 /* common.h */,
+				BD98D4E429C0A2EB00DC1881 /* ed25519_ref10.h */,
 				BD98D4E729C0A2EB00DC1881 /* ed25519_ref10_fe_25_5.h */,
 				BD98D4E829C0A2EB00DC1881 /* ed25519_ref10_fe_51.h */,
-				BD98D4E429C0A2EB00DC1881 /* ed25519_ref10.h */,
 				BD98D4ED29C0A2EB00DC1881 /* implementations.h */,
 				BD98D4EB29C0A2EB00DC1881 /* mutex.h */,
+				BD9D9A612F39F01D008D8D5E /* quirks.h */,
 				BDAD42622AC1A41F00799C1E /* softaes.h */,
 				BD98D4E929C0A2EB00DC1881 /* sse2_64_32.h */,
 			);
@@ -3420,6 +3430,7 @@
 				BD39674D2AC9DA370048E7EA /* blake2.h in Headers */,
 				BD39674F2AC9DA370048E7EA /* crypto_core_ed25519.h in Headers */,
 				BD3967502AC9DA370048E7EA /* crypto_shorthash.h in Headers */,
+				BD9D9A642F39F01D008D8D5E /* quirks.h in Headers */,
 				BD3967532AC9DA370048E7EA /* x25519_ref10.h in Headers */,
 				BD3967562AC9DA370048E7EA /* crypto_stream_xsalsa20.h in Headers */,
 				BD3967572AC9DA370048E7EA /* ed25519_ref10.h in Headers */,
@@ -3584,6 +3595,7 @@
 				BD39684D2AC9DA430048E7EA /* aegis256_common.h in Headers */,
 				BD39684E2AC9DA430048E7EA /* randombytes_sysrandom.h in Headers */,
 				BD39684F2AC9DA430048E7EA /* crypto_verify_16.h in Headers */,
+				BD9D9A652F39F01D008D8D5E /* quirks.h in Headers */,
 				BD3968502AC9DA430048E7EA /* crypto_kx.h in Headers */,
 				BD3968512AC9DA430048E7EA /* crypto_pwhash_argon2i.h in Headers */,
 				BD3968522AC9DA430048E7EA /* crypto_core_ristretto255.h in Headers */,
@@ -3848,6 +3860,7 @@
 				BD569F052F39006B0071C4EF /* crypto_hash_sha256.h in Headers */,
 				BD569F062F39006B0071C4EF /* crypto_core_hsalsa20.h in Headers */,
 				BD569F072F39006B0071C4EF /* crypto_secretstream_xchacha20poly1305.h in Headers */,
+				BD9D9A632F39F01D008D8D5E /* quirks.h in Headers */,
 				BD569F082F39006B0071C4EF /* crypto_scalarmult.h in Headers */,
 				BD569F092F39006B0071C4EF /* version.h in Headers */,
 				BD569F0A2F39006B0071C4EF /* crypto_core_salsa208.h in Headers */,
@@ -4012,6 +4025,7 @@
 				BDAD424F2AC1981F00799C1E /* aegis256_common.h in Headers */,
 				BD3AB7D329BF7C14001E6C8C /* randombytes_sysrandom.h in Headers */,
 				BD3AB79629BF7C14001E6C8C /* crypto_verify_16.h in Headers */,
+				BD9D9A622F39F01D008D8D5E /* quirks.h in Headers */,
 				BD3AB7C229BF7C14001E6C8C /* crypto_kx.h in Headers */,
 				BD3AB79C29BF7C14001E6C8C /* crypto_pwhash_argon2i.h in Headers */,
 				BD3AB7B829BF7C14001E6C8C /* crypto_core_ristretto255.h in Headers */,
@@ -4771,6 +4785,7 @@
 				BD3967DB2AC9DA370048E7EA /* auth_hmacsha256.c in Sources */,
 				BD3967DC2AC9DA370048E7EA /* pwhash_argon2id.c in Sources */,
 				BD3967DD2AC9DA370048E7EA /* fe51_invert.c in Sources */,
+				BD9D9A5E2F39EB81008D8D5E /* crypto_ipcrypt.c in Sources */,
 				BD3967DE2AC9DA370048E7EA /* runtime.c in Sources */,
 				BD3967DF2AC9DA370048E7EA /* x25519_ref10.c in Sources */,
 				BD3967E02AC9DA370048E7EA /* secretbox_xsalsa20poly1305.c in Sources */,
@@ -4833,6 +4848,7 @@
 				BD39680F2AC9DA370048E7EA /* kdf_hkdf_sha512.c in Sources */,
 				BD3968102AC9DA370048E7EA /* crypto_secretbox_easy.c in Sources */,
 				BD3968112AC9DA370048E7EA /* sign_ed25519.c in Sources */,
+				BD9D9A602F39EBB7008D8D5E /* ipcrypt_soft.c in Sources */,
 				BD3968122AC9DA370048E7EA /* obsolete.c in Sources */,
 				BD3968132AC9DA370048E7EA /* crypto_pwhash.c in Sources */,
 			);
@@ -5092,6 +5108,7 @@
 				BD98D3B129C081BF00DC1881 /* crypto_box_seal.c in Sources */,
 				BD98D3B829C0827A00DC1881 /* core_hsalsa20_ref2.c in Sources */,
 				BD98D3AF29C0818E00DC1881 /* box_curve25519xsalsa20poly1305.c in Sources */,
+				BD9D9A5D2F39EB81008D8D5E /* crypto_ipcrypt.c in Sources */,
 				BD98D3BB29C082CB00DC1881 /* blake2b-compress-ref.c in Sources */,
 				BD98D3A929C080F500DC1881 /* auth_hmacsha256.c in Sources */,
 				BD98D3D029C0847E00DC1881 /* pwhash_argon2id.c in Sources */,
@@ -5154,6 +5171,7 @@
 				BD569D382F38F45C0071C4EF /* keccak1600_armsha3.c in Sources */,
 				BD569D392F38F45C0071C4EF /* keccak1600_ref.c in Sources */,
 				BD569D3A2F38F45C0071C4EF /* keccak1600.c in Sources */,
+				BD9D9A5F2F39EBB7008D8D5E /* ipcrypt_soft.c in Sources */,
 				BDAD42662AC1A69A00799C1E /* obsolete.c in Sources */,
 				BD98D3D129C0849D00DC1881 /* crypto_pwhash.c in Sources */,
 			);
