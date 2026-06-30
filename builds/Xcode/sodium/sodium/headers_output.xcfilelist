@@ -32,6 +32,7 @@ $(BUILT_PRODUCTS_DIR)/Headers/crypto_core_salsa208.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_core_salsa2012.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_generichash_blake2b.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_generichash.h
+$(BUILT_PRODUCTS_DIR)/Headers/crypto_hash_sha3.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_hash_sha256.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_hash_sha512.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_hash.h
@@ -40,6 +41,9 @@ $(BUILT_PRODUCTS_DIR)/Headers/crypto_kdf_blake2b.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_kdf_hkdf_sha256.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_kdf_hkdf_sha512.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_kdf.h
+$(BUILT_PRODUCTS_DIR)/Headers/crypto_kem_mlkem768.h
+$(BUILT_PRODUCTS_DIR)/Headers/crypto_kem_xwing.h
+$(BUILT_PRODUCTS_DIR)/Headers/crypto_kem.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_kx.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_onetimeauth_poly1305.h
 $(BUILT_PRODUCTS_DIR)/Headers/crypto_onetimeauth.h
